@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM nginx:alpine",
+    "COPY build /usr/share/nginx/html/"
+  ]
+}
