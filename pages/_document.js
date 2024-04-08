@@ -5,9 +5,9 @@ export default function MyDocument() {
     <Html>
       <Head />
       <body>
-        {/* <script
+        <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-EH5G4K2KFR"
+          src="https://www.googletagmanager.com/gtag/js?id=G-L1QKPLTWQX"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -15,10 +15,11 @@ export default function MyDocument() {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-EH5G4K2KFR');
+                gtag('config', 'G-L1QKPLTWQX');
               `,
           }}
-        /> */}
+        />
+
         <Main />
         <div id="modal" />
         <NextScript />
