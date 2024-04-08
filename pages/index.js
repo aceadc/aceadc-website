@@ -2,8 +2,8 @@
 
 import Head from "next/head";
 import React, { useState } from "react";
-import LearnerShowcase from "../components/LearnerShowcase";
-import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperience";
+// import LearnerShowcase from "../components/LearnerShowcase";
+import Pricing from "../components/Pricing";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
@@ -75,7 +75,7 @@ export default function Home(props) {
                 <img
                   className="block w-50 md:w-12"
                   src="logos/ace-logo-1.png"
-                  alt="Logo of Leadership in Teaching Excellence (LITE) national programme."
+                  alt="Logo of Ace ADC"
                 />
                 <h1 className="ml-2 md:text-xl pb-2 text-white">Ace ADC</h1>
               </a>
@@ -118,7 +118,7 @@ export default function Home(props) {
 
                 <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
-                    href=""
+                    href="/apply"
                     target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
@@ -605,13 +605,14 @@ export default function Home(props) {
         <SectionWithHeading heading="Key Timelines" darkBackground="true">
           <Timeline />
         </SectionWithHeading>
-        <section className="bg-gray-800 border-t border-b border-gray-700 relative">
+        <Pricing />
+        <section className="bg-gray-900 border-t border-b border-gray-700 relative">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="pt-10 lg:pt-20">
                 <div className="heading-with-leftborder">
                   <div className="ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36 flex items-center justify-between">
-                    <h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ">
+                    <h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight">
                       How to apply?
                     </h2>
                   </div>
@@ -619,7 +620,7 @@ export default function Home(props) {
               </div>
 
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
+                <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg">
                   <p>
                     The ADC written examination evaluates your understanding of
                     dental hygiene and/or dental therapy, testing your ability
@@ -646,11 +647,11 @@ export default function Home(props) {
                 <div className="mt-7">
                   <a
                     id="apply-button-how-to-apply"
-                    href=""
+                    href="/apply"
                     target="_blank"
                     className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
-                    Start by applying here
+                    Enroll Now
                   </a>
                 </div>
               </div>
@@ -691,7 +692,7 @@ export default function Home(props) {
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href=""
+                href="/apply"
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >

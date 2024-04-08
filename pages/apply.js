@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import { FaCheck } from "react-icons/fa";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -8,18 +7,26 @@ export default function Home() {
     email: "",
     country: "",
     plan: "",
+    phoneNumber: "",
+    message: "",
   });
+
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://example.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://api.payware.com.au/api/v1/website/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to submit form");
@@ -27,20 +34,34 @@ export default function Home() {
 
       console.log("Form submitted successfully");
 
+      // Show success message
+      setSuccessMessage(
+        "We have received your request and will be touch about the next steps shortly."
+      );
+
       // Reset form data after successful submission
       setFormData({
         name: "",
         email: "",
         country: "",
         plan: "",
+        phoneNumber: "",
+        message: "",
       });
 
-      // Show success message or perform any other actions
+      // Clear error message
+      setErrorMessage("");
     } catch (error) {
       console.error("Error submitting form:", error.message);
-      // Handle error (e.g., display error message to the user)
+      // Show error message
+      setErrorMessage(
+        "There was an error submitting this information. Please try after some time or contact support@aceadc.com"
+      );
+      // Clear success message
+      setSuccessMessage("");
     }
   };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -49,75 +70,23 @@ export default function Home() {
     }));
   };
 
-  const pricingData = [
-    {
-      title: "Basic",
-      monthlyPrice: "$29.99",
-      annualPrice: "$299.99",
-      discountedAnnualPrice: "$25.99",
-      discountedMonthlyPrice: "$29.99",
-      features: [
-        "3 Team Member",
-        "AI Chat",
-        "3 Active Workflows",
-        "10,000 Tokens",
-        "Account Support",
-        "All Prebuilt Integrations",
-      ],
-    },
-    {
-      title: "Premium",
-      monthlyPrice: "$49.99",
-      annualPrice: "$499.99",
-      discountedAnnualPrice: "$45.99",
-      discountedMonthlyPrice: "$49.99",
-      label: "Most Popular",
-      features: [
-        "Everything in Basic",
-        "20 Team Members",
-        "1,000,000 Tokens",
-        "Unlimited Workflows",
-        "Request New Workflows",
-        "Priority Support",
-      ],
-    },
-    {
-      title: "Enterprise",
-      monthlyPrice: "Contact",
-      annualPrice: "",
-      discountedAnnualPrice: "",
-      discountedMonthlyPrice: "",
-      features: [
-        "Everything in Premium",
-        "Unlimited Users",
-        "On Premise Solutions",
-        "Priority Support",
-        "Fine Grained Access Control",
-        "Single Sign-On",
-      ],
-    },
-  ];
-  const [isAnnual, setIsAnnual] = useState(true);
   return (
-    <div className={""}>
+    <div className={"bg-gray-800"}>
       <Head>
         <title>
           Ace ADC: Your Pathway to Success in the ADC Exam | ADC Part 1 Written
-          Exam Preparation | Testimonials
+          Exam Preparation | Apply
         </title>
         <meta
           name="description"
           content="Ace ADC offers comprehensive preparation for the ADC exam's written part 1. Prepare with expert guidance and resources tailored for success. Start your ADC prep journey today with Ace ADC"
-        ></meta>
+        />
         <meta
           name="keywords"
           content="Ace ADC, ADC, ADC Prep, ADC Exam, Written Exam 1, Dental Exam Prep, Australian Dentistry, Dental Practice Australia, Australian Dental Association, Australian Dental Council, Australia, ADC Written Exam Preparation"
-        ></meta>
-        <meta name="author" content="aceadc.com"></meta>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
+        />
+        <meta name="author" content="aceadc.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -143,7 +112,6 @@ export default function Home() {
         <meta property="og:url" content="https://aceadc.com/" />
         <meta name="twitter:card" content="/logo.png" />
         <meta property="og:site_name" content="Ace ADC" />
-        <meta name="Ace ADC offers comprehensive preparation for the ADC exam's written part 1. Prepare with expert guidance and resources tailored for success. Start your ADC prep journey today with Ace ADC"></meta>
       </Head>
       <main className="bg-gray-800 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 pb-10">
@@ -160,7 +128,7 @@ export default function Home() {
             </div>
           </header>
         </section>
-        <section className="bg-gray-900 border-t border-gray-600 relative">
+        <section className="bg-gray-900 border-t border-gray-600 relative min-h-screen">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto relative z-10">
             <div className="border-l border-gray-600 mx-4 xl:mx-0 pt-6 lg:pt-12">
               <nav
@@ -217,50 +185,31 @@ export default function Home() {
                   </h2>
                 </div>
               </div>
-              <section className="flex justify-center gap-16 w-full flex-wrap pb-10">
-                {pricingData.map((plan, idx) => (
-                  <div
-                    key={idx}
-                    className={`rounded-lg relative flex flex-col mt-4 mb-6 items-center bg-white border ${
-                      plan.title === "Premium"
-                        ? "border-apple-blue"
-                        : "border-grey"
-                    } w-full md:w-[300px] p-8 rounded-xl shadow-md ${
-                      plan.title === "Premium"
-                        ? "shadow-lg transform scale-105"
-                        : ""
-                    } transition-all`}
-                  >
-                    {plan.label && (
-                      <div className="py-1 px-4 mb-4 bg-black text-white text-xs font-bold absolute -top-4 left-1/2 transform -translate-x-1/2 rounded-lg">
-                        {plan.label}
-                      </div>
-                    )}
-                    <div className="text-4xl font-black text-[#2d4053] mb-4 rounded-lg">
-                      {isAnnual
-                        ? `${plan.discountedAnnualPrice}`
-                        : `${plan.discountedMonthlyPrice}`}
-                    </div>
-                    <div className="text-2xl font-semibold text-[#383d49] mb-6">
-                      {plan.title}
-                    </div>
-                    <ul className="text-[#383d49] text-m space-y-3">
-                      {plan.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-3">
-                          <FaCheck className="text-deep-navy" size="1.2em" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </section>
-
               <div className="max-w-5xl mx-auto mt-10 mb-10 pb-20 grid divide-y divide-gray-700">
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto m-5">
+                <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg mb-5">
+                  <h3 className="text-primary-500 mb-10">
+                    Do you require financial assistance?
+                  </h3>
+                  <p>
+                    We believe in making education accessible to everyone,
+                    regardless of circumstances. If you're facing financial
+                    challenges but are eager to learn and excel, share your
+                    story with us. Let us know why you should be considered for
+                    a concession on the course fee. Your input will help us
+                    better understand your situation and find ways to support
+                    your educational journey. We're here to help you succeed.
+                    <br />
+                    <br />
+                    Alternatively, if you just want to get started on your
+                    journey, just fill the form below and we'll be in touch
+                    shortly after with the next steps.
+                  </p>
+                </div>
+                <form onSubmit={handleSubmit} className="max-w-md mx-auto m-10">
                   <input
                     type="text"
                     name="name"
+                    required
                     placeholder="Name"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -269,6 +218,7 @@ export default function Home() {
                   <input
                     type="email"
                     name="email"
+                    required
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleInputChange}
@@ -277,10 +227,27 @@ export default function Home() {
                   <input
                     type="text"
                     name="country"
+                    required
                     placeholder="Country"
                     value={formData.country}
                     onChange={handleInputChange}
                     className="w-full border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <input
+                    type="tel"
+                    name="phoneNumber"
+                    placeholder="Phone Number"
+                    value={formData.phoneNumber}
+                    onChange={handleInputChange}
+                    className="w-full border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="(optional) Tell us about yourself"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="w-full border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    rows="4"
                   />
                   <div className="text-white">
                     <label className="mr-4">
@@ -292,7 +259,7 @@ export default function Home() {
                         onChange={handleInputChange}
                         className="mr-2"
                       />
-                      9 Months
+                      Basic
                     </label>
                     <label className="mr-4 p-5">
                       <input
@@ -303,7 +270,7 @@ export default function Home() {
                         onChange={handleInputChange}
                         className="mr-2"
                       />
-                      2 Years
+                      Extended
                     </label>
                     <label>
                       <input
@@ -323,6 +290,14 @@ export default function Home() {
                   >
                     Submit
                   </button>
+                  {/* Success message */}
+                  {successMessage && (
+                    <div className="text-green-600 mt-2">{successMessage}</div>
+                  )}
+                  {/* Error message */}
+                  {errorMessage && (
+                    <div className="text-red-600 mt-2">{errorMessage}</div>
+                  )}
                 </form>
               </div>
             </div>
