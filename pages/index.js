@@ -206,7 +206,7 @@ export default function Home(props) {
 
         <SectionWithHeading heading="ADC Written Exam 1 Preparation">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            The ACE ADC curriculum is offered to students through an advanced
+            The Ace ADC curriculum is offered to students through an advanced
             Learning Management System. These courses will impart skill
             competencies to students to prepare at their own pace for the
             Australian Dental Council (ADC) Part 1 Exam.
@@ -218,7 +218,7 @@ export default function Home(props) {
               </p>
               <p className="text-white leading-snug mt-1">
                 <span className="font-semibold">Material</span> - Ace ADC
-                Toolkit, ADC centric books, Artricles. 1000 MCQs and ADA
+                Toolkit, ADC centric books, Artricles, 1000 MCQs and ADA
                 guidelines
               </p>
             </div>
@@ -382,12 +382,12 @@ export default function Home(props) {
         >
           <div>
             <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-              Join a diverse cohort of students from over 10 countries and gain
-              access to carefully curated study materials aligned with the
-              latest ADC exam standards. Prepare at your own pace with engaging
-              reading material, interactive quizzes, and realistic mock tests
-              tailored to enhance your skills and maximize your success in the
-              upcoming ADC Written Part 1 Exam.
+              Join a diverse cohort of students and gain access to carefully
+              curated study materials aligned with the latest ADC exam
+              standards. Prepare at your own pace with engaging reading
+              material, interactive quizzes, and realistic mock tests tailored
+              to enhance your skills and maximize your success in the upcoming
+              ADC Written Part 1 Exam.
               <br />
               <br />
               Our sustainable, scalable, and inclusive model is led by a
@@ -464,10 +464,7 @@ export default function Home(props) {
           </div> */}
         </SectionWithHeading>
 
-        <SectionWithHeading
-          heading="The Power of a Community"
-          darkBackground="true"
-        >
+        <SectionWithHeading heading="The Power of a Community">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             At Ace ADC, we understand that embarking on a journey to a new
             country can be daunting. That's why our online learning platform is
@@ -488,9 +485,9 @@ export default function Home(props) {
                   Our Mission
                 </p>
                 <p className="text-4xl md:text-3xl font-semibold mt-4">
-                  Empowering global dental professionals{" "}
-                  <span className="text-primary-500">affordably</span> for
-                  success in Australian dentistry.
+                  Making superior medical study resources accessible and{" "}
+                  <span className="text-primary-500">affordable</span> to
+                  aspiring Australian Doctors.
                 </p>
                 <svg
                   className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
@@ -563,11 +560,37 @@ export default function Home(props) {
                   </svg>
 
                   <p className="text-gray-500 text-lg font-semibold">
-                    Students from
+                    Live Since
                   </p>
                 </div>
                 <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
-                  10+ Countries
+                  March 2023
+                </p>
+              </div>
+
+              <div>
+                <div className="flex gap-3 items-center mt-8">
+                  <svg
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+                      fill="#FFD761"
+                    />
+                  </svg>
+
+                  <p className="text-gray-500 text-lg font-semibold">
+                    Success Stories
+                  </p>
+                </div>
+                <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
+                  5+ and counting
                 </p>
               </div>
             </div>
@@ -612,48 +635,24 @@ export default function Home(props) {
           <Timeline />
         </SectionWithHeading>
         <Pricing />
-        <section className="bg-gray-900 border-t border-b border-gray-700 relative">
-          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
-            <div className="border-l border-gray-700 mx-4 xl:mx-0">
-              <div className="pt-10 lg:pt-20">
-                <div className="heading-with-leftborder">
-                  <div className="ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36 flex items-center justify-between">
-                    <h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight">
-                      How to apply?
-                    </h2>
-                  </div>
-                </div>
-              </div>
 
-              <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg">
-                  <p>
-                    Ace ADC assists candidates in preparing for the written
-                    examination by providing comprehensive courses covering the
-                    science and practice of dental hygiene and dental therapy,
-                    tailored specifically to the requirements of dental practice
-                    in Australia. Through engaging content and interactive
-                    learning experiences, Ace ADC helps students develop and
-                    refine their clinical judgment and reasoning skills,
-                    ensuring they are well-equipped to excel in the ADC written
-                    exam and thrive in the Australian dental environment and
-                    build a career for your career in dentistry.
-                  </p>
-                </div>
-                <div className="mt-7">
-                  <a
-                    id="apply-button-how-to-apply"
-                    href="/apply"
-                    target="_blank"
-                    className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-                  >
-                    Enroll Now
-                  </a>
-                </div>
-              </div>
+        <div className="border border-gray-700 py-10">
+          <div className="max-w-7xl mx-auto px-3">
+            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6">
+              <h4 className="text-white text-xl md:text-3xl font-semibold mt-3 w-full md:w-4/5">
+                Your first step to Ace your ADC exam starts here
+                <br />
+              </h4>
+              <a
+                id="apply-button-footer-cta"
+                href="/apply"
+                className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+              >
+                Click here to Apply
+              </a>
             </div>
           </div>
-        </section>
+        </div>
 
         <Testimonials />
 
@@ -691,20 +690,6 @@ export default function Home(props) {
                   Extensions to the access may be made on a case by case basis.
                 </li>
               </ul>
-            </div>
-            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
-              <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
-                Your first step to Ace your ADC exam starts here
-                <br />
-              </h4>
-              <a
-                id="apply-button-footer-cta"
-                href="/apply"
-                target="_blank"
-                className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-              >
-                Click here to Apply
-              </a>
             </div>
 
             <div className="text-white mt-12">

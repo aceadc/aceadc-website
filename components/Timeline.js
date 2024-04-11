@@ -2,7 +2,7 @@ import React from "react";
 
 let timelineList = [
   {
-    date: "10 April 2024",
+    date: "15 April 2024",
     event: "Ace ADC Applications Open - September '24 Cohort",
   },
   {

@@ -123,9 +123,10 @@ export default function ProvenPathwaySection() {
         darkBackground="true"
       >
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-          We are redefining traditional approaches and strive to offer aspiring
-          dentists an unparalleled academic environment, guidance, and
-          mentorship to ensure their success. <br />
+          We are redefining traditional approaches and offer aspiring dentists
+          an unparalleled academic environment, and all the tools required to
+          ensure their success.
+          <br />
           <br />
         </p>
         <div className="mt-2">
@@ -154,8 +155,7 @@ export default function ProvenPathwaySection() {
               stepHeading="Endotontics - Operative"
               stepImgSrc="/order/endo.png"
             >
-              <p>Duration: 2 Weeks / 15 hours</p>
-              <p className="mt-2">
+              <p>
                 Endodontics focuses on the diagnosis, prevention, and treatment
                 of dental pulp and the surrounding tissues. In this part of the
                 curriculum for the ADC Writte Exam, students will delve into
@@ -221,7 +221,6 @@ export default function ProvenPathwaySection() {
               stepHeading="Oral Surgery + Radiology"
               stepImgSrc="/order/surgery.png"
             >
-              <p>Duration: 4 Weeks</p>
               <p>
                 Using material created out of policies from the Australian
                 Dental Association and the Australian Dental Council (ADC), Ace
@@ -280,12 +279,8 @@ export default function ProvenPathwaySection() {
               stepHeading="Past Exams - Practice Part 1"
               stepImgSrc="/order/radio.png"
             >
-              <p>Duration: 1 Week</p>
-              <br />
               <p>
-                <span className="bg-yellow-300 font-medium text-gray-900">
-                  Exam Simulation Quizzes
-                </span>{" "}
+                Exam Simulation Quizzes
                 <br />
                 <br />
                 During the first week of Previous Exams preparation, students
@@ -305,12 +300,8 @@ export default function ProvenPathwaySection() {
               stepHeading="Past Exams - Practice Part 2"
               stepImgSrc="/order/pieces.svg"
             >
-              <p>Duration: 1 Week</p>
-              <br />
               <p>
-                <span className="bg-yellow-300 font-medium text-gray-900">
-                  Comprehensive Review and Analysis
-                </span>{" "}
+                Comprehensive Review and Analysis
                 <br />
                 <br />
                 In the second week, students will delve deeper into exam
@@ -329,7 +320,6 @@ export default function ProvenPathwaySection() {
               stepHeading="Master Quiz + Revision"
               stepImgSrc="/order/step-2.svg"
             >
-              <p>Duration: 2 Weeks</p>
               <br />
               <p>
                 In the crucial final two weeks leading up to the ADC exam,

@@ -21,24 +21,25 @@ const P = [
     description: (
       <div>
         <div className="mb-3">
-          <strong className="text-primary-500">Study Material:</strong>{" "}
-          Comprehensive study resources including over 30 books, ADC guidelines,
-          and important articles.
+          <strong className="text-primary-500">Study Plan:</strong> Access to a
+          structured study plan to help you organize and optimize your study
+          time effectively.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">8 month LMS Access:</strong>{" "}
+          <strong className="text-primary-500">Study Material:</strong>{" "}
+          Comprehensive study resources including over 50 books, important Odell
+          cases, 1000 solved MCQs, over 30 ADC guidelines, and over 100 useful
+          articles.
+        </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">LMS Access (8 Months):</strong>{" "}
           Enjoy access to the Learning Management System (LMS) for a duration of
           8 months - more than enough for your prep for the upcoming ADC exam.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Quizzes</strong> Weekly quizzes
-          covering individual topics, as well as complete exam mocks ensuring
-          comprehensive preparation, until the last week of your exam.
-        </div>
-        <div className="mb-3">
-          <strong className="text-primary-500">1000+ MCQs:</strong> Access over
-          1000 Multiple Choice Questions to strengthen your preparation and test
-          your knowledge.
+          <strong className="text-primary-500">Quizzes</strong> Self-paced
+          quizzes covering individual topics, as well as complete exam mocks
+          ensuring comprehensive preparation, until the last week of your exam.
         </div>
         <div className="mb-3">
           <strong className="text-primary-500">Community:</strong> Engage with a
@@ -76,35 +77,28 @@ const P = [
           the ADC Written Exam.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">24 month LMS Access:</strong>{" "}
+          <strong className="text-primary-500">LMS Access (24 Months):</strong>{" "}
           Over 75% of ADC Written Exam candidates require a second attempt at
           the ADC Written Exam. We focus on sustainable learning to prevent
-          burnout. Our Extended plan provides 2 years access (~4 ADC Attempts)
-          to comprehensive resources and additional features for holistic
-          learning.
-        </div>
-        <div className="mb-3">
-          <strong className="text-primary-500">Study Plan:</strong> Access to a
-          structured study plan to help you organize and optimize your study
-          time effectively.
+          burnout. Our Extended plan provides 2 years access to all our study
+          resources.
         </div>
         <div className="mb-3">
           <strong className="text-primary-500">Exam Shortcuts:</strong>{" "}
           Mastering MCQs isn't just about selecting the correct answer — it's
-          about time efficiency and managing nerves. Learn our proven methods
-          for quick, confident decision-making.
+          about time efficiency and managing nerves. Learn the tips and tricks
+          for quick, confident decision-making. This also includes conceptual
+          shortcuts that will help you beyond the ADC exam.
         </div>
         <div className="mb-3">
           <strong className="text-primary-500">The Ace ADC Toolkit:</strong> Our
           secret sauce goes beyond study material. Gain access to all previous
-          exams, including the question bank from the last paper, and Scenario
-          Based Questions (SBQ).
+          exams, including the question bank from March 2024 exam.
         </div>
         <br />
         <a
           id="apply-button-footer-cta"
           href="/apply"
-          target="_blank"
           className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
         >
           Click here to Apply
@@ -121,11 +115,11 @@ const ProfessionalSkill = ({ title, heading, description, id, imgSrc }) => {
         <img src={imgSrc} alt={title + "" + heading} />
       </div>
       <div className="text-white pt-8 md:pt-4" id={id}>
-        <p className="text-gray-400 font-semibold">{title}</p>
         <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
-          <span className="text-primary-500">_</span>
+          {" "}
           {heading}
         </h3>
+        <p className="text-gray-400 font-semibold">{title}</p>
         <div className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
           {description}
         </div>

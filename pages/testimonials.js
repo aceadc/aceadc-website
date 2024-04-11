@@ -185,11 +185,11 @@ export default function Home() {
                         <div className="rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
                           <img
                             className="object-cover rounded-lg"
-                            src="avatars/nadini-headshot.png"
+                            src="avatars/meville-headshot.png"
                           />
                         </div>
                         <div className="pt-3">
-                          <p className="font-bold">Nadini H.</p>
+                          <p className="font-bold">Meville Javasundaram</p>
                           <p className="text-sm text-gray-400">'23 Cohort'</p>
                           <p className="text-sm">🇱🇰 Sri Lanka</p>
                         </div>

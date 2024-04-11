@@ -20,9 +20,9 @@ export default function Pricing() {
       label: "Most Popular",
       features: [
         "All in Basic",
-        "2 Year Access to LMS",
-        "Exam Shortcuts",
         "Ace ADC Toolkit",
+        "2 Year Access to LMS",
+        "Exam Shortcuts"
       ],
     },
     // {
