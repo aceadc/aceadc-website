@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import SectionWithHeading from "../components/SectionWithHeading";
+import Image from "next/image";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -119,16 +121,19 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <a className="flex items-center" href="/">
                 <img
-                  className="block w-50 md:w-12"
+                  className="block w-50 md:w-20"
                   src="logos/ace-logo-1.png"
                   alt="Logo of Ace ADC"
                 />
-                <h1 className="ml-2 md:text-xl pb-2 text-white">Ace ADC</h1>
+                <h1 className="ml-2 text-6xl md:text-6xl pb-2 text-white">
+                  Ace ADC
+                </h1>
               </a>
             </div>
           </header>
         </section>
-        <section className="bg-gray-900 border-t border-gray-600 relative min-h-screen">
+
+        <section className="bg-gray-900 border-t border-gray-600 relative min-h-screen pb-2">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto relative z-10">
             <div className="border-l border-gray-600 mx-4 xl:mx-0 pt-6 lg:pt-12">
               <nav
@@ -151,7 +156,7 @@ export default function Home() {
                         >
                           <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                         </svg>
-                        <span>Apply for Ace ADC</span>
+                        <span>Ace ADC</span>
                       </a>
                     </div>
                   </li>
@@ -243,7 +248,7 @@ export default function Home() {
                   />
                   <textarea
                     name="message"
-                    placeholder="(optional) Tell us about yourself"
+                    placeholder="If you require a concession, explain your situation here"
                     value={formData.message}
                     onChange={handleInputChange}
                     className="w-full border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -268,25 +273,14 @@ export default function Home() {
                         value="2 Years"
                         checked={formData.plan === "2 Years"}
                         onChange={handleInputChange}
-                        className="mr-2"
-                      />
-                      Extended
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        name="plan"
-                        value="Personal"
-                        checked={formData.plan === "Personal"}
-                        onChange={handleInputChange}
                         className="mr-2 mb-5"
                       />
-                      Personal
+                      Extended
                     </label>
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full bg-indigo-500 text-white font-bold py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   >
                     Submit
                   </button>
@@ -299,6 +293,61 @@ export default function Home() {
                     <div className="text-red-600 mt-2">{errorMessage}</div>
                   )}
                 </form>
+              </div>
+              <div className="justify-center text-center max-w-md mx-auto pb-5 mb-10">
+                <p className="text-white mb-5">
+                  You can find us on our socials
+                </p>
+                <div className="flex justify-center text-center max-w-md mx-auto pb-5 mb-10">
+                  {/* Facebook Icon */}
+                  <a href="#" className="mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-7 w-7"
+                      fill="currentColor"
+                      style={{ color: "#1877f2" }}
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                  </a>
+                  {/* LinkedIn Icon */}
+                  <a href="#" className="mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-7 w-7"
+                      fill="currentColor"
+                      style={{ color: "#0077b5" }}
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                  </a>
+                  {/* Youtube Icon */}
+                  <a href="#" className="mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-8 w-8"
+                      fill="currentColor"
+                      style={{ color: "#ff0000" }}
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                  </a>
+                  {/* Mail Icon */}
+                  <a href="mailto:support@aceadc.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-8 w-8"
+                      fill="currentColor"
+                      style={{ color: "#ffffff" }}
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22.288 21H1.712c-.945.0-1.712-.767-1.712-1.712V5.712c0-.945.767-1.712 1.712-1.712h20.576C23.233 4 24 4.767 24 5.712v13.576c0 .945-.767 1.712-1.712 1.712zM12 14.914 2.658 8.431 2.638 20h18.684V8.431L12 14.914zM20.869 5H3.08L12 11.229S18.252 6.823 20.869 5z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

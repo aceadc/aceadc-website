@@ -54,11 +54,13 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <a className="flex items-center" href="/">
                 <img
-                  className="block w-50 md:w-12"
+                  className="block w-50 md:w-20"
                   src="logos/ace-logo-1.png"
-                  alt="Logo of Leadership in Teaching Excellence (LITE) national programme."
+                  alt="Logo of Ace ADC"
                 />
-                <h1 className="ml-2 md:text-xl pb-2 text-black">Ace ADC</h1>
+                <h1 className="ml-2 text-6xl md:text-6xl pb-2 text-white">
+                  Ace ADC
+                </h1>
               </a>
             </div>
           </header>

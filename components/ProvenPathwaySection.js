@@ -118,16 +118,21 @@ export default function ProvenPathwaySection() {
 
   return (
     <div>
-      <SectionWithHeading heading="Why wait? Join the proven pathway">
+      <SectionWithHeading
+        heading="Join the proven pathway"
+        darkBackground="true"
+      >
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-          Our mission is to revolutionize dentistry exam preparation by
-          redefining traditional approaches. We strive to offer aspiring
+          We are redefining traditional approaches and strive to offer aspiring
           dentists an unparalleled academic environment, guidance, and
           mentorship to ensure their success. <br />
           <br />
         </p>
         <div className="mt-2">
-          <img src="/career-pathway/career-pathway.webp" alt="" />
+          <img
+            src="/career-pathway/career-pathway.webp"
+            alt="Ace ADC Proven Pathway to Success"
+          />
         </div>
         <div className="block md:grid md:grid-cols-8 gap-4 mt-12">
           <div className="hidden md:block md:col-span-3">

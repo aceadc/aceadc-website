@@ -60,12 +60,24 @@ export default function Home(props) {
         <meta name="Ace ADC offers comprehensive preparation for the ADC exam's written part 1. Prepare with expert guidance and resources tailored for success. Start your ADC prep journey today with Ace ADC"></meta>
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto overflow-x-hidden">
+        <section className="mx-auto relative">
+          <div className="bg-gray-800 p-2 border-t border-gray-900 rounded-md">
+            <a href="/apply">
+              <div className="w-max mx-auto bg-gradient-to-br from-gray-700 to-gray-900 border border-red-400 rounded-lg shadow-md p-3 md:p-4 text-center">
+                <p className="text-white text-l md:text-l lg:text-xl font-bold leading-tight md:leading-normal">
+                  Apply now for the September 2024 Cohort
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+
         <section className="hero__bg-pattern bg-gray-900 relative">
           <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 z-0">
             <img
               className="h-full w-full object-cover relative"
               src="hero/hero-bg.webp"
-              alt="LITE - hero background image"
+              alt="Ace ADC - hero background image"
             />
             <div className="absolute inset-0"></div>
           </div>
@@ -73,11 +85,13 @@ export default function Home(props) {
             <div className="flex justify-between items-center">
               <a className="flex items-center" href="/">
                 <img
-                  className="block w-50 md:w-12"
+                  className="block w-50 md:w-20"
                   src="logos/ace-logo-1.png"
                   alt="Logo of Ace ADC"
                 />
-                <h1 className="ml-2 md:text-xl pb-2 text-white">Ace ADC</h1>
+                <h1 className="ml-2 text-6xl md:text-6xl pb-2 text-white">
+                  Ace ADC
+                </h1>
               </a>
 
               {/* <img
@@ -87,42 +101,29 @@ export default function Home(props) {
               /> */}
             </div>
           </header>
-          <div className="pb-4 px-4 xl:px-0">
-            <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center m-5">
+          <div className="pb-1 px-4 xl:px-0 pt-5">
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center mt-5">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
-                <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
-                  <span className="block text-lg md:text-xl pb-2">
-                    19% pass percentage in 2023<sup>*</sup>
-                  </span>{" "}
-                  Start your career in{" "}
-                  <span className="text-white">
-                    <u>Dentistry</u>
-                  </span>
+                <h1 className="text-primary-500 text-xl md:text-xl lg:text-xl 2xl:text-3xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
+                  Your Journey to become an{" "}
+                  <span className="text-white">Australian Dentist</span> starts
+                  here
                 </h1>
-                <p>
-                  <a
-                    className="italic text-sm underline text-gray-300 hover:text-primary-500"
-                    href="https://annualreport23.adc.org.au"
-                    target="_blank no-referrer"
-                  >
-                    *Source: ADC Annual Report 2023
-                  </a>
-                </p>
                 <p className="pr-2 mt-10 text-small text-white leading-relaxed">
-                  <i>Student concessions and disconts available </i>
-                  <span className="bg-yellow-300 text-gray-900">
-                    {" "}
-                    on cases by case basis
-                  </span>{" "}
+                  <i>
+                    Our goal is to provide the most affordable and effective
+                    self-study plan for you to crack the ADC Written Part 1
+                    Exam. Student concessions and discounts available on case by
+                    case basis.
+                  </i>
                 </p>
 
                 <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
                     href="/apply"
-                    target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
-                    Start by applying here
+                    Enroll Now
                   </a>
 
                   <svg
@@ -153,39 +154,21 @@ export default function Home(props) {
                   </svg>
                 </div>
               </div>
-              <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
+              <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block ">
                 <img
                   className="absolute object-contain max-w-xl xl:max-w-3xl 2xl:max-w-4xl left-1/2 right-0 top-0 z-0"
-                  src="hero/hero.webp"
+                  src="hero/female-doc.png"
                   alt="Illustration of female graduate student."
                 />
               </div>
             </div>
+
+            <div className="absolute inset-0">
+              <div className="absolute right-0 top-0 bottom-0 bg-gradient-to-r from-transparent to-black bg-opacity-20 w-1/2"></div>
+            </div>
           </div>
           <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-16 relative z-10">
-            <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 rounded-lg flex items-center flex-col">
-              <p className="text-lg md:text-2xl text-center font-bold"></p>
-              <div className="w-full flex flex-wrap gap-10 items-center lg:justify-between mt-12">
-                {/* <img
-                  src="https://adc.org.au/wp-content/uploads/2021/09/ADC_Logo_Landscape_RGB.png"
-                  alt="ADC Australia"
-                  width="200"
-                  height="200"
-                />
-                <img
-                  src="https://img.imageboss.me/ada-live/width/98/getmedia/e2370f06-cfbf-4020-aa2e-a5557b77277d/ADA_Image_logo_blue_symbol.png"
-                  alt="ADA Australia"
-                  height="150"
-                  width="150"
-                />
-                <img
-                  src="https://www.pupilfirst.org/pupilfirst.svg"
-                  alt="Pupilfirst"
-                  height="150"
-                  width="150"
-                /> */}
-              </div>
-            </div>
+            {/* <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 rounded-lg flex items-center flex-col relative"></div> */}
           </section>
           <svg
             className="hidden md:block absolute right-0 top-1/4 object-center z-1"
@@ -225,8 +208,8 @@ export default function Home(props) {
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             The ACE ADC curriculum is offered to students through an advanced
             Learning Management System. These courses will impart skill
-            competencies to students to prepare at their own pace for the ADC
-            Part 1 Exam.
+            competencies to students to prepare at their own pace for the
+            Australian Dental Council (ADC) Part 1 Exam.
           </p>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
             <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
@@ -234,8 +217,9 @@ export default function Home(props) {
                 Extensive Content
               </p>
               <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Material</span> - Not the whole
-                book, just what you need to remember
+                <span className="font-semibold">Material</span> - Ace ADC
+                Toolkit, ADC centric books, Artricles. 1000 MCQs and ADA
+                guidelines
               </p>
             </div>
             <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
@@ -258,8 +242,8 @@ export default function Home(props) {
                 Targeted Learning
               </p>
               <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Interactive</span> -
-                Personalised and constantly evolving content and structure
+                <span className="font-semibold">Interactive</span> - Study plan,
+                Exam Shortcuts, Tips and tricks for Best choice answers
               </p>
             </div>
             <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
@@ -282,8 +266,9 @@ export default function Home(props) {
                 Quizzes
               </p>
               <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Exam Simulation</span> - with
-                Previous Years' Exams and Mock Tests
+                <span className="font-semibold">Exam Simulation</span> -
+                Extensive question pool with latest Mar '24 question bank,
+                Self-paced quizzes and Mock Tests
               </p>
             </div>
             <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
@@ -308,7 +293,8 @@ export default function Home(props) {
               </p>
               <p className="text-white leading-snug mt-1">
                 <span className="font-semibold">Forum</span> - Networking for
-                collaborative online student interaction
+                collaborative online student interaction and finding study
+                partners
               </p>
             </div>
           </div>
@@ -324,6 +310,28 @@ export default function Home(props) {
               alt="Course pathway"
             />
           </div>
+          <a
+            className="mt-10 flex justify-center items-center space-x-3 border border-indigo-400 text-indigo-300 bg-gray-800 rounded-md text-base font-medium underline px-3 py-2 hover:bg-gray-900 hover:text-indigo-300 transition"
+            href="/pathway"
+          >
+            <span>See course topics here</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="w-7 h-7"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </span>
+          </a>
+
           {/* <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
             <a
               id="apply-button-below-video"
@@ -336,7 +344,7 @@ export default function Home(props) {
           </div> */}
         </SectionWithHeading>
 
-        <SectionWithHeading
+        {/* <SectionWithHeading
           heading="Experience the future of Exam Prep"
           darkBackground="true"
         >
@@ -366,9 +374,12 @@ export default function Home(props) {
               ></iframe>
             </div>
           </div>
-        </SectionWithHeading>
+        </SectionWithHeading> */}
 
-        <SectionWithHeading heading="🇦🇺 Australia needs Doctors*">
+        <SectionWithHeading
+          heading="🇦🇺 Australia needs Doctors*"
+          darkBackground="true"
+        >
           <div>
             <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
               Join a diverse cohort of students from over 10 countries and gain
@@ -461,16 +472,12 @@ export default function Home(props) {
             At Ace ADC, we understand that embarking on a journey to a new
             country can be daunting. That's why our online learning platform is
             more than just a place for courses — it's a vibrant community where
-            students from around the world come together to{" "}
-            <span className="bg-yellow-300 text-gray-900">
-              support and uplift each other
-            </span>{" "}
-            . Through our unique forum, you can connect with peers, share
-            experiences, and find guidance from solving a problem, to getting a
-            referral for a job.
+            students from around the world come together to support and uplift
+            each other. Through our unique forum, you can connect with peers,
+            share experiences, and find guidance from solving a problem.
             <br />
             <br />
-            The ADC Exam is just the first challlenge and at Ace ADC, we want to
+            The ADC Exam is just the first challenge and at Ace ADC, we want to
             help you navigate challenges, celebrate victories, and forge lasting
             connections as we pursue our dreams in Australian dentistry.
           </p>
@@ -482,8 +489,8 @@ export default function Home(props) {
                 </p>
                 <p className="text-4xl md:text-3xl font-semibold mt-4">
                   Empowering global dental professionals{" "}
-                  <u className="text-primary-500">affordably</u> for success in
-                  Australian dentistry.
+                  <span className="text-primary-500">affordably</span> for
+                  success in Australian dentistry.
                 </p>
                 <svg
                   className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
@@ -601,7 +608,6 @@ export default function Home(props) {
 
         {/* <LearnerShowcase darkBackground="true" /> */}
 
-        <ProvenPathwaySection />
         <SectionWithHeading heading="Key Timelines" darkBackground="true">
           <Timeline />
         </SectionWithHeading>
@@ -622,12 +628,6 @@ export default function Home(props) {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg">
                   <p>
-                    The ADC written examination evaluates your understanding of
-                    dental hygiene and/or dental therapy, testing your ability
-                    to apply clinical judgment and reasoning skills essential
-                    for dental practice in Australia.
-                    <br />
-                    <br />
                     Ace ADC assists candidates in preparing for the written
                     examination by providing comprehensive courses covering the
                     science and practice of dental hygiene and dental therapy,
@@ -637,11 +637,7 @@ export default function Home(props) {
                     refine their clinical judgment and reasoning skills,
                     ensuring they are well-equipped to excel in the ADC written
                     exam and thrive in the Australian dental environment and
-                    build a career for{"  "}
-                    <span className="bg-yellow-300 font-medium text-gray-900">
-                      your career in dentistry
-                    </span>
-                    .{" "}
+                    build a career for your career in dentistry.
                   </p>
                 </div>
                 <div className="mt-7">
@@ -667,8 +663,19 @@ export default function Home(props) {
               <h4>Important</h4>
               <ul className="list-disc ml-4">
                 <li className="mt-4">
+                  ADC Written Exam had a 19% pass percentage in 2023
+                  <br />
+                  <a
+                    className="italic text-sm underline text-gray-300 hover:text-primary-500"
+                    href="https://annualreport23.adc.org.au"
+                    target="_blank no-referrer"
+                  >
+                    *Source: ADC Annual Report 2023
+                  </a>
+                </li>
+                <li className="mt-4">
                   Applicants can apply and get onboarded to the next cohort till
-                  August 2024. We recommend that you submit your application
+                  1 August 2024. We recommend that you submit your application
                   earlier in order to give yourself more time to prepare for the
                   September 2024 exam.
                 </li>
@@ -768,12 +775,4 @@ export default function Home(props) {
       </main>
     </div>
   );
-}
-export async function getStaticProps() {
-  return {
-    props: {
-      hiringNetwork: hiringNetworkData,
-      facultyMembers: facultyMembersData,
-    },
-  };
 }

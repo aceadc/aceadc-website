@@ -3,7 +3,7 @@ import React from "react";
 export default function Testimonial({
   name,
   batch,
-  university,
+  country,
   testimony,
   imageSrc,
 }) {
@@ -34,7 +34,7 @@ export default function Testimonial({
           <p className="text-lg md:text-xl text-gray-300">{testimony}</p>
           <p className="font-semibold mt-4 text-gray-200">{name}</p>
           <p className="text-sm text-gray-400">{batch},</p>
-          <p className="text-sm text-gray-400">{university}</p>
+          <p className="text-sm text-gray-400">{country}</p>
         </div>
       </div>
     </div>

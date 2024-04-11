@@ -5,7 +5,7 @@ export default function MyDocument() {
     <Html>
       <Head />
       <body>
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-L1QKPLTWQX"
         ></script>
@@ -18,7 +18,7 @@ export default function MyDocument() {
                 gtag('config', 'G-L1QKPLTWQX');
               `,
           }}
-        />
+        /> */}
 
         <Main />
         <div id="modal" />

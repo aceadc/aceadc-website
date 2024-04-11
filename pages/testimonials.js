@@ -53,11 +53,13 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <a className="flex items-center" href="/">
                 <img
-                  className="block w-50 md:w-12"
+                  className="block w-50 md:w-20"
                   src="logos/ace-logo-1.png"
-                  alt="Logo of Leadership in Teaching Excellence (LITE) national programme."
+                  alt="Ace ADC Logo"
                 />
-                <h1 className="ml-2 md:text-xl pb-2 text-white">Ace ADC</h1>
+                <h1 className="ml-2 text-6xl md:text-6xl pb-2 text-white">
+                  Ace ADC
+                </h1>
               </a>
             </div>
           </header>
@@ -124,10 +126,10 @@ export default function Home() {
                   <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
                     <div className="col-span-4 lg:text-right pt-2">
                       <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
-                        <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="rounded-lg w-14 h-14 lg:w-24 lg:h-24 flex-shrink-0">
                           <img
                             className="object-cover rounded-lg"
-                            src="/avatars/avatar-iulia-albu.png"
+                            src="/avatars/maria-headshot.png"
                           />
                         </div>
                         <div className="pt-3">
@@ -135,7 +137,7 @@ export default function Home() {
                           <p className="text-sm pt-1 text-gray-400">
                             '24 Cohort
                           </p>
-                          <p className="text-sm">Dental Professional</p>
+                          <p className="text-sm">🇨🇴 Colombia</p>
                         </div>
                       </div>
                     </div>
@@ -152,18 +154,18 @@ export default function Home() {
                   <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
                     <div className="col-span-4 lg:text-right pt-2">
                       <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
-                        <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
                           <img
                             className="object-cover rounded-lg"
-                            src="/avatars/avatar-miron-vitold.png"
+                            src="/avatars/situ-headshot.png"
                           />
                         </div>
                         <div className="pt-3">
-                          <p className="font-bold">Ahmed K.</p>
+                          <p className="font-bold">Situmorang K.</p>
                           <p className="text-sm pt-1 text-gray-400">
                             '23 Cohort
                           </p>
-                          <p className="text-sm">BDS Graduate</p>
+                          <p className="text-sm">🇮🇩 Indonesia</p>
                         </div>
                       </div>
                     </div>
@@ -180,16 +182,16 @@ export default function Home() {
                   <div className="lg:grid lg:grid-cols-12 relative gap-16 text-white font-medium pt-10 px-4">
                     <div className="col-span-4 pt-2">
                       <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
-                        <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
                           <img
                             className="object-cover rounded-lg"
-                            src="avatars/avatar-neha-punita.png"
+                            src="avatars/nadini-headshot.png"
                           />
                         </div>
                         <div className="pt-3">
-                          <p className="font-bold">Zara Sahandi</p>
+                          <p className="font-bold">Nadini H.</p>
                           <p className="text-sm text-gray-400">'23 Cohort'</p>
-                          <p className="text-sm">Dental Hygienist</p>
+                          <p className="text-sm">🇱🇰 Sri Lanka</p>
                         </div>
                       </div>
                     </div>

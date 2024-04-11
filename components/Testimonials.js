@@ -4,20 +4,20 @@ import Testimonial from "./Testimonial";
 
 let testimonialList = [
   {
-    name: "Sai Mallik Rameshwaram",
+    name: "Aryan Kapoor",
     batch: "'24 Cohort",
-    university: "Dental Assistant",
+    country: "🇮🇳 India",
     testimony:
       "As someone with a busy schedule, I needed a flexible and accessible learning platform to prepare for the ADC exam. Ace ADC exceeded my expectations with its user-friendly interface and comprehensive study materials. Thanks to Ace ADC, I'm now well on my way to pursuing my dental career in Australia!",
-    imageSrc: "/avatars/avatar-omar-darboe.png",
+    imageSrc: "/avatars/sai-headshot.png",
   },
   {
-    name: "Emily R.",
+    name: "Aiman Ali",
     batch: "'23 Cohort",
-    university: "BDS Graduate",
+    country: "🇵🇰 Pakistan",
     testimony:
       "Ace ADC's community forum was a game-changer for me. Being able to connect with fellow dental professionals navigating the same journey made all the difference. It's like having a supportive family cheering you on!",
-    imageSrc: "/avatars/avatar-jane-rotanson.png",
+    imageSrc: "/avatars/aiman-headshot.png",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Testimonials() {
               key={index}
               name={testimonial.name}
               batch={testimonial.batch}
-              university={testimonial.university}
+              country={testimonial.country}
               testimony={testimonial.testimony}
               imageSrc={testimonial.imageSrc}
             />

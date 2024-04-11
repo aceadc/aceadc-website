@@ -6,7 +6,7 @@ export default function Pricing() {
   const pricingData = [
     {
       title: "Basic",
-      price: "AU$ 449",
+      price: "AU$ 349",
       features: [
         "8 Month Access to LMS",
         "Study Material",
@@ -16,34 +16,34 @@ export default function Pricing() {
     },
     {
       title: "Extended",
-      price: "AU$ 599",
+      price: "AU$ 449",
       label: "Most Popular",
       features: [
         "All in Basic",
         "2 Year Access to LMS",
-        "Session Recordings",
-        "Master Quizzes",
+        "Exam Shortcuts",
+        "Ace ADC Toolkit",
       ],
     },
-    {
-      title: "Personal",
-      price: "AU$ 1999",
-      features: [
-        "All in Extended",
-        "Peronalised Assessment",
-        "Topic specific Webinars",
-        "Online Chat with Instructors",
-      ],
-    },
+    // {
+    //   title: "Personal",
+    //   price: "AU$ 1999",
+    //   features: [
+    //     "All in Extended",
+    //     "Peronalised Assessment",
+    //     "Topic specific Webinars",
+    //     "Online Chat with Instructors",
+    //   ],
+    // },
   ];
   return (
-    <SectionWithHeading heading="Your career starts here">
+    <SectionWithHeading heading="Affordable Excellence">
       <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
         Ace ADC aims to provide the most comprehensive and affordable method for
         you to crack your ADC Written Exam.
       </p>
 
-      <section className="flex justify-center gap-16 w-full flex-wrap pb-10 mt-10">
+      <section className="flex justify-center gap-16 w-full flex-wrap pb-1 mt-10">
         {pricingData.map((plan, idx) => (
           <div
             key={idx}
@@ -74,6 +74,27 @@ export default function Pricing() {
             </ul>
           </div>
         ))}
+        <a
+          className="flex md:w-5/6 justify-center items-center space-x-3 border border-indigo-400 text-indigo-300 bg-gray-800 rounded-md text-base font-medium underline px-3 py-2 hover:bg-gray-900 hover:text-indigo-300 transition"
+          href="/pricing"
+        >
+          <span>See plan details here</span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="w-7 h-7"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+              />
+            </svg>
+          </span>
+        </a>
       </section>
     </SectionWithHeading>
   );
