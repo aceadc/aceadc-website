@@ -19,7 +19,7 @@ export default function MyDocument() {
               `,
           }}
         />
-
+        <script src="/posthog.js" />
         <Main />
         <div id="modal" />
         <NextScript />

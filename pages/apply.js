@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import posthog from "posthog-js";
+// import posthog from "posthog-js";
 import Footer from "../components/Footer";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Image from "next/image";
@@ -32,14 +32,14 @@ export default function Home() {
       //   }
       // );
 
-      posthog.capture("ace-apply-form", {
-        name: formData.name,
-        email: formData.email,
-        country: formData.country,
-        plan: formData.plan,
-        phoneNumber: formData.phoneNumber,
-        message: formData.message,
-      });
+      // posthog.capture("ace-apply-form", {
+      //   name: formData.name,
+      //   email: formData.email,
+      //   country: formData.country,
+      //   plan: formData.plan,
+      //   phoneNumber: formData.phoneNumber,
+      //   message: formData.message,
+      // });
 
       const response = await fetch("/api/contact", {
         method: "POST",
