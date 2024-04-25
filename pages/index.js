@@ -4,6 +4,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 // import LearnerShowcase from "../components/LearnerShowcase";
 import Pricing from "../components/Pricing";
+import Footer from "../components/Footer";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
@@ -729,7 +730,6 @@ export default function Home(props) {
                 Students shall adhere to the{" "}
                 <a
                   className="text-indigo-400 underline hover:text-indigo-500"
-                  target="_blank"
                   href="/coc"
                 >
                   Code of Conduct
@@ -743,7 +743,6 @@ export default function Home(props) {
                 Please refer to the{" "}
                 <a
                   className="text-indigo-400 underline hover:text-indigo-500"
-                  target="_blank"
                   href="/faq"
                 >
                   Frequently Asked Questions (FAQ),
@@ -757,6 +756,7 @@ export default function Home(props) {
             </div>
           </div>
         </div>
+        <Footer />
       </main>
     </div>
   );

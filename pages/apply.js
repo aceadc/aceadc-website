@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import posthog from "posthog-js";
+import Footer from "../components/Footer";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Image from "next/image";
 
@@ -19,16 +21,34 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        "https://api.payware.com.au/api/v1/website/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      // const response = await fetch(
+      //   "https://api.payware.com.au/api/v1/website/contact",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify(formData),
+      //   }
+      // );
+
+      posthog.capture("ace-apply-form", {
+        name: formData.name,
+        email: formData.email,
+        country: formData.country,
+        plan: formData.plan,
+        phoneNumber: formData.phoneNumber,
+        message: formData.message,
+      });
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to submit form");
@@ -137,18 +157,18 @@ export default function Home() {
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto relative z-10">
             <div className="border-l border-gray-600 mx-4 xl:mx-0 pt-6 lg:pt-12">
               <nav
-                class="flex bg-gray-900 sticky top-0 max-w-5xl mx-auto px-4 lg:px-0 py-2 z-10"
+                className="flex bg-gray-900 sticky top-0 max-w-5xl mx-auto px-4 lg:px-0 py-2 z-10"
                 aria-label="Breadcrumb"
               >
-                <ol role="list" class="flex items-center space-x-4">
+                <ol role="list" className="flex items-center space-x-4">
                   <li>
                     <div>
                       <a
                         href="/"
-                        class="flex pr-2 py-2 items-center font-medium text-base space-x-2 text-gray-300 hover:text-primary-500 hover:underline"
+                        className="flex pr-2 py-2 items-center font-medium text-base space-x-2 text-gray-300 hover:text-primary-500 hover:underline"
                       >
                         <svg
-                          class="flex-shrink-0 h-5 w-5"
+                          className="flex-shrink-0 h-5 w-5"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -162,9 +182,9 @@ export default function Home() {
                   </li>
 
                   <li>
-                    <div class="flex items-center">
+                    <div className="flex items-center">
                       <svg
-                        class="flex-shrink-0 h-5 w-5 text-gray-300"
+                        className="flex-shrink-0 h-5 w-5 text-gray-300"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
                         viewBox="0 0 20 20"
@@ -174,7 +194,7 @@ export default function Home() {
                       </svg>
                       <a
                         href="/apply"
-                        class="ml-4 px-2 py-2 font-medium text-white hover:text-primary-500 hover:underline"
+                        className="ml-4 px-2 py-2 font-medium text-white hover:text-primary-500 hover:underline"
                       >
                         Apply
                       </a>
@@ -259,8 +279,8 @@ export default function Home() {
                       <input
                         type="radio"
                         name="plan"
-                        value="9 Months"
-                        checked={formData.plan === "9 Months"}
+                        value="basic"
+                        checked={formData.plan === "basic"}
                         onChange={handleInputChange}
                         className="mr-2"
                       />
@@ -270,8 +290,8 @@ export default function Home() {
                       <input
                         type="radio"
                         name="plan"
-                        value="2 Years"
-                        checked={formData.plan === "2 Years"}
+                        value="extended"
+                        checked={formData.plan === "extended"}
                         onChange={handleInputChange}
                         className="mr-2 mb-5"
                       />
@@ -300,7 +320,10 @@ export default function Home() {
                 </p>
                 <div className="flex justify-center text-center max-w-md mx-auto pb-5 mb-10">
                   {/* Facebook Icon */}
-                  <a href="#" className="mr-4">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61558405256259"
+                    className="mr-4"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-7 w-7"
@@ -312,7 +335,10 @@ export default function Home() {
                     </svg>
                   </a>
                   {/* LinkedIn Icon */}
-                  <a href="#" className="mr-4">
+                  <a
+                    href="https://www.linkedin.com/company/ace-adc/"
+                    className="mr-4"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-7 w-7"
@@ -324,7 +350,7 @@ export default function Home() {
                     </svg>
                   </a>
                   {/* Youtube Icon */}
-                  <a href="#" className="mr-4">
+                  <a href="https://www.youtube.com/@Ace_ADC" className="mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-8 w-8"
@@ -352,6 +378,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </div>
   );

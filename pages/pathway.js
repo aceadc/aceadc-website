@@ -2,6 +2,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Image from "next/image";
+import Footer from "../components/Footer";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
 
 export default function Home() {
@@ -190,6 +191,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </div>
   );

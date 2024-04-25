@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
+import Footer from "../components/Footer";
 
 let illustrations = [
   {
@@ -52,14 +53,6 @@ const P = [
           Terms of Service for details.
         </p>
         <br />
-        <a
-          id="apply-button-footer-cta"
-          href="/apply"
-          target="_blank"
-          className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-        >
-          Click here to Apply
-        </a>
       </div>
     ),
   },
@@ -96,13 +89,6 @@ const P = [
           exams, including the question bank from March 2024 exam.
         </div>
         <br />
-        <a
-          id="apply-button-footer-cta"
-          href="/apply"
-          className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-        >
-          Click here to Apply
-        </a>
       </div>
     ),
   },
@@ -130,15 +116,17 @@ const ProfessionalSkill = ({ title, heading, description, id, imgSrc }) => {
 
 const ProfessionalSkillIllustration = ({ id, src, activeIllustration }) => {
   return (
-    <>
-      <img
-        className={`inset-0 absolute top-20 left-0 ${
-          id === activeIllustration ? "opacity-100" : "opacity-0"
-        } transition-opacity ease-in duration-300`}
-        src={src}
-        alt="Artist"
-      />
-    </>
+    <div className="relative">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          className={`absolute top-20 left-0 ${
+            id === activeIllustration ? "opacity-100" : "opacity-0"
+          } transition-opacity ease-in duration-300`}
+          src={src}
+          alt="Artist"
+        />
+      </div>
+    </div>
   );
 };
 
@@ -318,6 +306,17 @@ export default function ProfessionalSkills(props) {
                           />
                         );
                       })}
+                      <div className="text-center mt-4">
+                        {" "}
+                        {/* Adjust margin top as needed */}
+                        <a
+                          id="apply-button-footer-cta"
+                          href="/apply"
+                          className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+                        >
+                          Click here to Apply
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -326,14 +325,7 @@ export default function ProfessionalSkills(props) {
           </div>
         </div>
       </section>
-
-      {/* <section className="mx-auto relative">
-        <div className="bg-gray-800 p-4 lg:p-10 border-t border-gray-700 mt-8">
-          <p className="max-w-5xl font-bold text-indigo-500 text-center text-xl lg:text-3xl lg:leading-tight lg:mx-auto">
-            Ace ADC - Your Career Starts Here 🚀
-          </p>
-        </div>
-      </section> */}
+      <Footer />
     </div>
   );
 }
