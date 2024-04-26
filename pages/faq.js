@@ -95,7 +95,7 @@ export default function Home() {
           name="keywords"
           content="Ace ADC, ADC, ADC Prep, ADC Exam, Written Exam 1, Dental Exam Prep, Australian Dentistry, Dental Practice Australia, Australian Dental Association, Australian Dental Council, Australia, ADC Written Exam Preparation"
         ></meta>
-        <meta name="author" content="aceadc.com"></meta>
+        <meta name="author" content="Ace ADC"></meta>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
