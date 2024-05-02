@@ -22,6 +22,9 @@ const P = [
     description: (
       <div>
         <div className="mb-3">
+          <h3><strong className="text-indigo-500">$349</strong></h3>
+        </div>
+        <div className="mb-3">
           <strong className="text-primary-500">Study Plan:</strong> Access to a
           structured study plan to help you organize and optimize your study
           time effectively.
@@ -60,9 +63,13 @@ const P = [
     id: "ps2",
     imgSrc: "/professional-skills/doctor.png",
     title: "ADC Written - Self Study (Extended - 2 years)",
+    price: "AU$ 449",
     heading: "Extended",
     description: (
       <div>
+        <div className="mb-3">
+          <h3><strong className="text-indigo-500">$449</strong></h3>
+        </div>
         <div className="mb-3">
           <strong className="text-primary-500">Everything in Basic:</strong> The
           Ace Extended plan offers everything in Basic, extended LMS access and
@@ -164,7 +171,7 @@ export default function ProfessionalSkills(props) {
         />
         <meta
           name="keywords"
-          content="Ace ADC, ADC, ADC Prep, ADC Exam, Written Exam 1, Dental Exam Prep, Australian Dentistry, Dental Practice Australia, Australian Dental Association, Australian Dental Council, Australia, ADC Written Exam Preparation"
+          content="Ace ADC, ADC, ADC Prep, ADC Exam, ADC Written Exam, Dental Exam Prep, Australian Dentistry, Dental Practice Australia, Australian Dental Association, Australian Dental Council, Australia, ADC Written Exam Preparation"
         />
         <meta name="author" content="Ace ADC" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -254,7 +261,7 @@ export default function ProfessionalSkills(props) {
                       href="/apply"
                       className="ml-4 px-2 py-2 font-medium text-white hover:text-primary-500 hover:underline"
                     >
-                      Pricing Plans
+                      Plans
                     </a>
                   </div>
                 </li>

@@ -37,7 +37,7 @@ export default function Pricing() {
     // },
   ];
   return (
-    <SectionWithHeading heading="Affordable Excellence">
+    <SectionWithHeading heading="Affordable Excellence" darkBackground="true">
       <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
         Ace ADC aims to provide the most comprehensive and affordable method for
         you to crack your ADC Written Exam.

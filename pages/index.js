@@ -377,10 +377,41 @@ export default function Home(props) {
           </div>
         </SectionWithHeading> */}
 
-        <SectionWithHeading
-          heading="🇦🇺 Australia needs Doctors*"
-          darkBackground="true"
-        >
+        <SectionWithHeading heading="Who is Ace ADC for" darkBackground="true">
+          <div>
+            <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+              Ace ADC is tailored for dental professionals seeking to prepare
+              for the Australian Dental Council (ADC) written exam through
+              self-study.
+              <br />
+              <br />
+              Unlike traditional courses, Ace ADC focuses on providing the best
+              study resources and a world-class Learning Management System (LMS)
+              to facilitate efficient exam preparation. Our platform offers
+              self-paced quizzes, comprehensive study materials, and expert
+              guidance - NOT lengthy, repetetive, video lectures.
+              <br />
+              <br />
+              Ace ADC is significantly more affordable and accessible, making it
+              the ideal choice for those looking to excel in their ADC exam
+              preparation journey.
+              <br />
+              <br />
+              Whether you're a recent graduate looking to practice dentistry in
+              Australia or an international experienced practitioner seeking
+              licensure in a Australia, Ace ADC provides the resources and
+              support you need to succeed. Our platform caters to individuals at
+              all stages of their dental careers, offering comprehensive study
+              materials, and guidance to help you achieve your goals.
+              <br />
+              <br />
+              Join the Ace ADC community today and take the first step towards
+              your future in Australian dentistry!
+            </p>
+          </div>
+        </SectionWithHeading>
+
+        <SectionWithHeading heading="🇦🇺 Australia needs Doctors*">
           <div>
             <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
               Join a diverse cohort of students and gain access to carefully
@@ -465,7 +496,10 @@ export default function Home(props) {
           </div> */}
         </SectionWithHeading>
 
-        <SectionWithHeading heading="The Power of a Community">
+        <SectionWithHeading
+          heading="The Power of a Community"
+          darkBackground="true"
+        >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             At Ace ADC, we understand that embarking on a journey to a new
             country can be daunting. That's why our online learning platform is
@@ -632,7 +666,7 @@ export default function Home(props) {
 
         {/* <LearnerShowcase darkBackground="true" /> */}
 
-        <SectionWithHeading heading="Key Timelines" darkBackground="true">
+        <SectionWithHeading heading="Key Timelines">
           <Timeline />
         </SectionWithHeading>
         <Pricing />
