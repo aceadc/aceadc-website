@@ -5,36 +5,44 @@ import { FaCheck } from "react-icons/fa";
 export default function Pricing() {
   const pricingData = [
     {
-      title: "Basic",
-      price: "AU$ 349",
+      title: "Study Material",
+      price: "AU$ 499",
       features: [
-        "8 Month Access to LMS",
-        "Study Material",
-        "Quizzes",
+        "30 Week LMS Access",
+        "All Study Books",
         "Access to Community",
       ],
+      buttonLink: "https://buy.stripe.com/9AQ03IeN0aeR8AU28c",
+      buttonText: "Apply Now",
+      buttonEnabled: true,
     },
     {
-      title: "Extended",
-      price: "AU$ 449",
+      title: "Full ADC Exam Prep",
+      price: "AU$ 1349",
       label: "Most Popular",
       features: [
-        "All in Basic",
-        "Ace ADC Toolkit",
-        "2 Year Access to LMS",
-        "Exam Shortcuts"
+        "30 Week LMS Access",
+        "75+ Video Training Hours",
+        "Ace ADC Quizzes + SBCs",
+        "Exam Shortcuts",
+        "Chat Support for doubts",
       ],
+      buttonLink: "https://buy.stripe.com/4gw7wafR4ev74kE147",
+      buttonText: "Apply Now",
+      buttonEnabled: true,
     },
-    // {
-    //   title: "Personal",
-    //   price: "AU$ 1999",
-    //   features: [
-    //     "All in Extended",
-    //     "Peronalised Assessment",
-    //     "Topic specific Webinars",
-    //     "Online Chat with Instructors",
-    //   ],
-    // },
+    {
+      title: "Mock Test",
+      price: "AU$ 49",
+      features: [
+        "Complete Exam Simulation",
+        "Recent exam SBQs",
+        "Upto 5 different mocks",
+      ],
+      buttonLink: "",
+      buttonText: "Available in 2025",
+      buttonEnabled: false,
+    },
   ];
   return (
     <SectionWithHeading heading="Affordable Excellence" darkBackground="true">
@@ -60,6 +68,9 @@ export default function Pricing() {
             )}
             <div className="text-4xl font-black text-[#2d4053] mb-4 rounded-lg">
               {plan.price}
+              <p className="text-center italic text-sm text-gray-300">
+                + GST (10%)
+              </p>
             </div>
             <div className="text-2xl font-semibold text-[#383d49] mb-6">
               {plan.title}
@@ -72,6 +83,27 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
+
+            <div className="text-center mt-4 pt-4">
+              {/* Adjust margin top as needed */}
+              {plan.buttonEnabled ? (
+                <a
+                  id="apply-button-footer-cta"
+                  href={plan.buttonLink}
+                  className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+                >
+                  {plan.buttonText}
+                </a>
+              ) : (
+                <a
+                  id="apply-button-footer-cta"
+                  href={plan.buttonLink}
+                  className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-gray-300 text-gray-500 cursor-not-allowed rounded-md text-base lg:text-lg text-center font-semibold shadow-lg"
+                >
+                  {plan.buttonText}
+                </a>
+              )}
+            </div>
           </div>
         ))}
         <a

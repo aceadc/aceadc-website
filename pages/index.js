@@ -63,10 +63,10 @@ export default function Home(props) {
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto overflow-x-hidden">
         <section className="mx-auto relative">
           <div className="bg-gray-800 p-2 border-t border-gray-900 rounded-md">
-            <a href="/apply">
+            <a href="/pricing">
               <div className="w-max mx-auto bg-gradient-to-br from-gray-700 to-gray-900 border border-red-400 rounded-lg shadow-md p-3 md:p-4 text-center">
                 <p className="text-white text-l md:text-l lg:text-xl font-bold leading-tight md:leading-normal">
-                  Apply now for the September 2024 Cohort
+                  Apply now for the 2025 Cohort
                 </p>
               </div>
             </a>
@@ -114,14 +114,23 @@ export default function Home(props) {
                   <i>
                     Our goal is to provide the most affordable and effective
                     self-study plan for you to crack the ADC Written Part 1
-                    Exam. Student concessions and discounts available on case by
-                    case basis.
+                    Exam.
                   </i>
                 </p>
-
+                <p className="pr-2 mt-10 text-small text-white leading-relaxed">
+                  <i>
+                    <a
+                      href="/apply"
+                      className="text-primary-500 hover:text-indigo-300"
+                    >
+                      <u>Student concessions and discounts</u>
+                    </a>{" "}
+                    available on case by case basis.
+                  </i>
+                </p>
                 <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
-                    href="/apply"
+                    href="/pricing"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
                     Enroll Now
@@ -680,7 +689,7 @@ export default function Home(props) {
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="/apply"
+                href="/pricing"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Click here to Apply
@@ -709,9 +718,9 @@ export default function Home(props) {
                 </li>
                 <li className="mt-4">
                   Applicants can apply and get onboarded to the next cohort till
-                  1 August 2024. We recommend that you submit your application
+                  Feb or August. We recommend that you submit your application
                   earlier in order to give yourself more time to prepare for the
-                  September 2024 exam.
+                  March or September exam.
                 </li>
                 <li className="mt-4">
                   Alongside subject specific material, applicants get access to
@@ -720,9 +729,10 @@ export default function Home(props) {
                   course work and quizzes.
                 </li>
                 <li className="mt-4">
-                  Access to the Learning Management System (LMS) may be
-                  restricted to a single exam sitting, unless advised otherwise.
-                  Extensions to the access may be made on a case by case basis.
+                  Access to the Learning Management System (LMS) and Video
+                  Lectures is restricted to a single exam sitting, unless
+                  advised otherwise. Extensions to the access is available for
+                  additional cost.
                 </li>
               </ul>
             </div>

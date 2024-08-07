@@ -9,93 +9,189 @@ let illustrations = [
   },
   {
     id: "ps2",
+    src: "/professional-skills/good-communicator.svg",
+  },
+  {
+    id: "ps3",
     src: "/professional-skills/doctor.png",
   },
 ];
 
 const P = [
   {
-    id: "ps1",
-    imgSrc: "/professional-skills/artist.svg",
-    title: "ADC Written - Self Study (Basic - 8 months)",
-    heading: "Basic",
+    id: "ps2",
+    imgSrc: "/professional-skills/doctor.png",
+    title: "Study Material, LMS, Video Lectures & more",
+    price: "AU$ 1349",
+    heading: "Full ADC Part 1 Prep",
     description: (
       <div>
         <div className="mb-3">
-          <h3><strong className="text-indigo-500">$349</strong></h3>
+          <h3>
+            <strong className="text-indigo-500">$1349</strong>
+          </h3>
+          <p className="italic text-sm text-gray-500">+ GST(10%)</p>
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Study Plan:</strong> Access to a
-          structured study plan to help you organize and optimize your study
-          time effectively.
+          <strong className="text-primary-500">
+            Complete ADC Written Exam Prep:
+          </strong>{" "}
+          Join Ace's Full ADC Exam Prep course for complete LMS access, all
+          video lectures, and the best tools to ace the ADC Written Exam.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Study Material:</strong>{" "}
-          Comprehensive study resources including over 50 books, important Odell
-          cases, 1000 solved MCQs, over 30 ADC guidelines, and over 100 useful
-          articles.
+          <strong className="text-primary-500">LMS Access (30 Weeks):</strong>{" "}
+          Enjoy 30 weeks of access to the Learning Management System (LMS),
+          providing ample time to prepare for the ADC exam.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">LMS Access (8 Months):</strong>{" "}
-          Enjoy access to the Learning Management System (LMS) for a duration of
-          8 months - more than enough for your prep for the upcoming ADC exam.
+          <strong className="text-primary-500">
+            Topic-Specific Video Training:
+          </strong>{" "}
+          Access weekly, topic-focused training covering all ADC exam aspects
+          and real-world dental practice.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Quizzes</strong> Self-paced
-          quizzes covering individual topics, as well as complete exam mocks
-          ensuring comprehensive preparation, until the last week of your exam.
+          <strong className="text-primary-500">
+            Ace ADC Quizzes and SBCs:
+          </strong>{" "}
+          Beyond study materials, access previous exams questions and master
+          Scenario-Based Questions (SBCs) with Ace.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Community:</strong> Engage with a
-          community of peers and mentors for support, collaboration, and sharing
-          of insights and experiences. This is your first network when you crack
-          your exam and move towards securing your first job.
+          <strong className="text-primary-500">Exam Shortcuts:</strong> Learn
+          time-efficient techniques and conceptual shortcuts for SBQs and MCQs
+          to enhance exam performance and manage nerves.
+        </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">
+            Support for Doubts and Clarifications:
+          </strong>{" "}
+          Get direct one-to-one support from instructors for any doubts, big or
+          small.
         </div>
         <p className="italic text-sm text-gray-300">
-          Upgrade to Extended after 8 months for $150*. Please refer to our full
-          Terms of Service for details.
+          Re-enrollments available at subsidized cost.
         </p>
         <br />
+        <div className="text-center mt-4">
+          <a
+            id="apply-button-footer-cta"
+            href="https://buy.stripe.com/4gw7wafR4ev74kE147"
+            className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+          >
+            Register Now
+          </a>
+        </div>
       </div>
     ),
   },
   {
-    id: "ps2",
-    imgSrc: "/professional-skills/doctor.png",
-    title: "ADC Written - Self Study (Extended - 2 years)",
-    price: "AU$ 449",
-    heading: "Extended",
+    id: "ps1",
+    imgSrc: "/professional-skills/artist.svg",
+    title: "Self Study with LMS",
+    heading: "Study Material",
     description: (
       <div>
         <div className="mb-3">
-          <h3><strong className="text-indigo-500">$449</strong></h3>
+          <h3>
+            <strong className="text-indigo-500">$499</strong>
+          </h3>
+          <p className="italic text-sm text-gray-500">+ GST(10%)</p>
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Everything in Basic:</strong> The
-          Ace Extended plan offers everything in Basic, extended LMS access and
-          more resources to give you the absolutle best tools required to crack
-          the ADC Written Exam.
+          <strong className="text-primary-500">Study Plan:</strong> Access a
+          structured study plan to organize and optimize your study time
+          effectively.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">LMS Access (24 Months):</strong>{" "}
-          Over 75% of ADC Written Exam candidates require a second attempt at
-          the ADC Written Exam. We focus on sustainable learning to prevent
-          burnout. Our Extended plan provides 2 years access to all our study
-          resources.
+          <strong className="text-primary-500">Books and Material:</strong>{" "}
+          Comprehensive resources including over 50 books, essential Odell
+          cases, 1000 solved MCQs, 30+ ADC guidelines, and 100+ useful articles.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">Exam Shortcuts:</strong>{" "}
-          Mastering MCQs isn't just about selecting the correct answer — it's
-          about time efficiency and managing nerves. Learn the tips and tricks
-          for quick, confident decision-making. This also includes conceptual
-          shortcuts that will help you beyond the ADC exam.
+          <strong className="text-primary-500">LMS Access (30 Weeks):</strong>{" "}
+          Enjoy 30 weeks of access to the Learning Management System (LMS) for
+          thorough exam preparation.
         </div>
         <div className="mb-3">
-          <strong className="text-primary-500">The Ace ADC Toolkit:</strong> Our
-          secret sauce goes beyond study material. Gain access to all previous
-          exams, including the question bank from March 2024 exam.
+          <strong className="text-primary-500">Quizzes:</strong> Self-paced
+          quizzes on individual topics and full exam mocks to ensure
+          comprehensive preparation.
         </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">Community:</strong> Engage with
+          peers and mentors for support, collaboration, and sharing insights and
+          experiences. This network will support you through your exam and into
+          your dental career.
+        </div>
+        <p className="italic text-sm text-gray-300">
+          Extend access for an additional 30 weeks for $299. Please refer to our
+          full Terms of Service for details.
+        </p>
         <br />
+        <div className="text-center mt-4">
+          <a
+            id="apply-button-footer-cta"
+            href="https://buy.stripe.com/9AQ03IeN0aeR8AU28c"
+            className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+          >
+            Register Now
+          </a>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: "ps3",
+    imgSrc: "/professional-skills/doctor.png",
+    title: "The Ultimate Exam Simulation",
+    price: "AU$ 49",
+    heading: "Mock Test",
+    description: (
+      <div>
+        <div className="mb-3">
+          <h3>
+            <strong className="text-indigo-500">$49</strong>
+          </h3>
+          <p className="italic text-sm text-gray-500">+ GST(10%)</p>
+        </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">5 Mock Tests:</strong> The Ace
+          team prepares 5 of the best mock tests for every cohort, updated with
+          the latest guidelines, expected sections, and previous exam questions.
+        </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">Recent Guidelines:</strong> Ace
+          closely follows ADC exam guidelines, ensuring all updates in
+          structure, pattern, and topics are reflected in the mock tests.
+        </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">
+            Exam Performance Insights:
+          </strong>{" "}
+          Our mock tests include advanced performance insights, helping you
+          identify areas for improvement to maximize exam preparation.
+        </div>
+        <div className="mb-3">
+          <strong className="text-primary-500">Simulated Experience:</strong>{" "}
+          Ace aims to replicate the actual exam day experience. Our ongoing
+          improvements are first available to mock test users.
+        </div>
+        <p className="italic text-sm text-gray-300">
+          Each mock test is available for $49.
+        </p>
+        <br />
+        <div className="text-center mt-4">
+          <a
+            id="apply-button-footer-cta"
+            // href="/"
+            // className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+            className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-gray-300 text-gray-500 cursor-not-allowed rounded-md text-base lg:text-lg text-center font-semibold shadow-lg"
+          >
+            Available in 2025
+          </a>
+        </div>
       </div>
     ),
   },
@@ -103,7 +199,7 @@ const P = [
 
 const ProfessionalSkill = ({ title, heading, description, id, imgSrc }) => {
   return (
-    <div className="flex flex-col items-center min-h-screen md:block">
+    <div className="flex flex-col items-center min-h-screen md:block mt-10 ">
       <div className="block md:hidden mt-20">
         <img src={imgSrc} alt={title + "" + heading} />
       </div>
@@ -258,10 +354,10 @@ export default function ProfessionalSkills(props) {
                       <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                     </svg>
                     <a
-                      href="/apply"
+                      href="/pricing"
                       className="ml-4 px-2 py-2 font-medium text-white hover:text-primary-500 hover:underline"
                     >
-                      Plans
+                      Pricing
                     </a>
                   </div>
                 </li>
@@ -313,17 +409,6 @@ export default function ProfessionalSkills(props) {
                           />
                         );
                       })}
-                      <div className="text-center mt-4">
-                        {" "}
-                        {/* Adjust margin top as needed */}
-                        <a
-                          id="apply-button-footer-cta"
-                          href="/apply"
-                          className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-                        >
-                          Click here to Apply
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>

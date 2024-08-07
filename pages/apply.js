@@ -10,7 +10,6 @@ export default function Home() {
     name: "",
     email: "",
     country: "",
-    plan: "",
     phoneNumber: "",
     message: "",
   });
@@ -41,7 +40,7 @@ export default function Home() {
       //   message: formData.message,
       // });
 
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/assistance", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -66,7 +65,6 @@ export default function Home() {
         name: "",
         email: "",
         country: "",
-        plan: "",
         phoneNumber: "",
         message: "",
       });
@@ -196,7 +194,7 @@ export default function Home() {
                         href="/apply"
                         className="ml-4 px-2 py-2 font-medium text-white hover:text-primary-500 hover:underline"
                       >
-                        Apply
+                        Apply for Concession
                       </a>
                     </div>
                   </li>
@@ -206,7 +204,7 @@ export default function Home() {
               <div className="pt-4">
                 <div className="heading-with-leftborder mb-10">
                   <h2 className="max-w-5xl font-bold text-2xl lg:text-5xl text-white leading-tight ml-4 lg:mx-auto">
-                    Apply
+                    Apply for Concession
                   </h2>
                 </div>
               </div>
@@ -225,9 +223,9 @@ export default function Home() {
                     your educational journey. We're here to help you succeed.
                     <br />
                     <br />
-                    Alternatively, if you just want to get started on your
-                    journey, just fill the form below and we'll be in touch
-                    shortly after with the next steps.
+                    Alternatively, if you just want to get more information,
+                    just fill the form below and we'll be in touch shortly after
+                    with the next steps.
                   </p>
                 </div>
                 <form onSubmit={handleSubmit} className="max-w-md mx-auto m-10">
@@ -274,30 +272,6 @@ export default function Home() {
                     className="w-full border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows="4"
                   />
-                  <div className="text-white">
-                    <label className="mr-4">
-                      <input
-                        type="radio"
-                        name="plan"
-                        value="basic"
-                        checked={formData.plan === "basic"}
-                        onChange={handleInputChange}
-                        className="mr-2"
-                      />
-                      Basic
-                    </label>
-                    <label className="mr-4 p-5">
-                      <input
-                        type="radio"
-                        name="plan"
-                        value="extended"
-                        checked={formData.plan === "extended"}
-                        onChange={handleInputChange}
-                        className="mr-2 mb-5"
-                      />
-                      Extended
-                    </label>
-                  </div>
                   <button
                     type="submit"
                     className="w-full bg-indigo-500 text-white font-bold py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -316,7 +290,7 @@ export default function Home() {
               </div>
               <div className="justify-center text-center max-w-md mx-auto pb-5 mb-10">
                 <p className="text-white mb-5">
-                  You can find us on our socials
+                  You can find us on the internet
                 </p>
                 <div className="flex justify-center text-center max-w-md mx-auto pb-5 mb-10">
                   {/* Facebook Icon */}

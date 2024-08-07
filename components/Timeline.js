@@ -14,7 +14,7 @@ let timelineList = [
     event: "Application Period for ADC Written Exam",
   },
   {
-    date: "20 September 2024",
+    date: "11-12 September 2024",
     event: "ADC Written Exam",
   },
 ];
