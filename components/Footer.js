@@ -36,6 +36,9 @@ export default function Footer() {
               <a href="https://www.youtube.com/@Ace_ADC">
                 <p>Youtube</p>
               </a>
+              <a href="https://medium.com/@AceADC">
+                <p>Blog</p>
+              </a>
             </div>
             <div
               className={`flex flex-col gap-4 text-white text-center md:text-left mt-10 md:mt-0`}
