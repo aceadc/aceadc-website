@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Pricing from "../components/Pricing";
 import Footer from "../components/Footer";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
+import BlogCarrousel from "../components/BlogCarrousel";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
 import Timeline from "../components/Timeline";
@@ -414,8 +415,14 @@ export default function Home(props) {
               materials, and guidance to help you achieve your goals.
               <br />
               <br />
-              Join the Ace ADC community today and take the first step towards
-              your future in Australian dentistry!
+              <a
+                href="/pricing"
+                className="text-primary-500 hover:text-indigo-300"
+              >
+                <u>Join the Ace ADC community today</u>
+              </a>{" "}
+              and take the first step towards your future in Australian
+              dentistry!
             </p>
           </div>
         </SectionWithHeading>
@@ -699,6 +706,8 @@ export default function Home(props) {
         </div>
 
         <Testimonials />
+
+        <BlogCarrousel />
 
         <div className="border-t border-gray-700 py-20">
           <div className="max-w-7xl mx-auto px-3">
