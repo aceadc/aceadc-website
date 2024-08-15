@@ -30,7 +30,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61558405256259">
                 <p>Facebook</p>
               </a>
-              <a href="https://www.linkedin.com/company/ace-adc/">
+              <a href="https://www.linkedin.com/company/aceadc/">
                 <p>LinkedIn</p>
               </a>
               <a href="https://www.youtube.com/@Ace_ADC">

@@ -40,7 +40,7 @@ export default function BlogCarrousel() {
     <SectionWithHeading heading="Updates">
       <div>
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-          Take a Deep Dive into the newest at Ace ADC
+          Take a Deep Dive into the latest at Ace ADC
         </p>
         <div className="grid grid-cols-2 gap-6 md:gap-12 mt-8">
           {blogs.map((blog, index) => (
