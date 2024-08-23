@@ -29,8 +29,12 @@ const P = [
         <div className="mb-3">
           <h3>
             <strong className="text-indigo-500">$1349</strong>
+            <p className="text-xl italic text-gray-500 mb-3">
+              <s>$1800</s>
+            </p>
           </h3>
-          <p className="italic text-sm text-gray-500">+ GST(10%)</p>
+          {/* <p className="italic text-sm text-gray-500">+ GST(10%)</p> */}
+          <p className="italic text-sm text-gray-500">Early Bird Price</p>
         </div>
         <div className="mb-3">
           <strong className="text-primary-500">
@@ -77,7 +81,7 @@ const P = [
         <div className="text-center mt-4">
           <a
             id="apply-button-footer-cta"
-            href="https://buy.stripe.com/4gw7wafR4ev74kE147"
+            href="https://buy.stripe.com/5kAdUyawK86Jg3m5kq"
             className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
           >
             Register Now
@@ -95,9 +99,12 @@ const P = [
       <div>
         <div className="mb-3">
           <h3>
-            <strong className="text-indigo-500">$499</strong>
+            <strong className="text-indigo-500">$749</strong>
+            <p className="text-xl italic text-gray-500 mb-3">
+              <s>$900</s>
+            </p>
           </h3>
-          <p className="italic text-sm text-gray-500">+ GST(10%)</p>
+          {/* <p className="italic text-sm text-gray-500">+ GST(10%)</p> */}
         </div>
         <div className="mb-3">
           <strong className="text-primary-500">Study Plan:</strong> Access a
@@ -126,14 +133,14 @@ const P = [
           your dental career.
         </div>
         <p className="italic text-sm text-gray-300">
-          Extend access for an additional 30 weeks for $299. Please refer to our
+          Extend access for an additional 30 weeks for $449. Please refer to our
           full Terms of Service for details.
         </p>
         <br />
         <div className="text-center mt-4">
           <a
             id="apply-button-footer-cta"
-            href="https://buy.stripe.com/9AQ03IeN0aeR8AU28c"
+            href="https://buy.stripe.com/fZe7wa5cq3Qtg3m005"
             className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
           >
             Register Now
@@ -153,8 +160,11 @@ const P = [
         <div className="mb-3">
           <h3>
             <strong className="text-indigo-500">$49</strong>
+            <p className="text-xl italic text-gray-500 mb-3">
+              <s>$80</s>
+            </p>
           </h3>
-          <p className="italic text-sm text-gray-500">+ GST(10%)</p>
+          {/* <p className="italic text-sm text-gray-500">+ GST(10%)</p> */}
         </div>
         <div className="mb-3">
           <strong className="text-primary-500">5 Mock Tests:</strong> The Ace

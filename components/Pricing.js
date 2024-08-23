@@ -6,34 +6,37 @@ export default function Pricing() {
   const pricingData = [
     {
       title: "Study Material",
-      price: "AU$ 499",
+      price: "AU$ 749",
+      anchoredPrice: "A$ 900",
       features: [
         "30 Week LMS Access",
         "All Study Books",
         "Access to Community",
       ],
-      buttonLink: "https://buy.stripe.com/9AQ03IeN0aeR8AU28c",
+      buttonLink: "https://buy.stripe.com/fZe7wa5cq3Qtg3m005",
       buttonText: "Apply Now",
       buttonEnabled: true,
     },
     {
       title: "Full ADC Exam Prep",
       price: "AU$ 1349",
-      label: "Most Popular",
+      anchoredPrice: "A$ 1800",
+      label: "Early Bird Pricing",
       features: [
-        "30 Week LMS Access",
+        "Complete Study Material",
         "75+ Video Training Hours",
         "Ace ADC Quizzes + SBCs",
         "Exam Shortcuts",
         "Chat Support for doubts",
       ],
-      buttonLink: "https://buy.stripe.com/4gw7wafR4ev74kE147",
+      buttonLink: "https://buy.stripe.com/5kAdUyawK86Jg3m5kq",
       buttonText: "Apply Now",
       buttonEnabled: true,
     },
     {
       title: "Mock Test",
       price: "AU$ 49",
+      anchoredPrice: "A$ 80",
       features: [
         "Complete Exam Simulation",
         "Recent exam SBQs",
@@ -66,12 +69,15 @@ export default function Pricing() {
                 {plan.label}
               </div>
             )}
-            <div className="text-4xl font-black text-[#2d4053] mb-4 rounded-lg">
+            <div className="text-4xl font-black text-[#2d4053] mb-1 rounded-lg">
               {plan.price}
               <p className="text-center italic text-sm text-gray-300">
-                + GST (10%)
+                {/* + GST (10%) */}
               </p>
             </div>
+            <p className="text-center text-xl italic text-gray-600 mb-3">
+              <s>{plan.anchoredPrice}</s>
+            </p>
             <div className="text-2xl font-semibold text-[#383d49] mb-6">
               {plan.title}
             </div>
