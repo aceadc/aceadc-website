@@ -4,6 +4,12 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Posthog */}
+        <script
+          async
+          src='/posthog.js'
+        ></script>
+
         {/* Google Analytics */}
         <script
           async

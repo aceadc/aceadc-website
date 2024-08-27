@@ -30,7 +30,7 @@ const P = [
           <h3>
             <strong className="text-indigo-500">$1349</strong>
             <p className="text-xl italic text-gray-500 mb-3">
-              <s>$1800</s>
+              <s>$2400</s>
             </p>
           </h3>
           {/* <p className="italic text-sm text-gray-500">+ GST(10%)</p> */}
@@ -101,7 +101,7 @@ const P = [
           <h3>
             <strong className="text-indigo-500">$749</strong>
             <p className="text-xl italic text-gray-500 mb-3">
-              <s>$900</s>
+              <s>$1400</s>
             </p>
           </h3>
           {/* <p className="italic text-sm text-gray-500">+ GST(10%)</p> */}
@@ -161,7 +161,7 @@ const P = [
           <h3>
             <strong className="text-indigo-500">$49</strong>
             <p className="text-xl italic text-gray-500 mb-3">
-              <s>$80</s>
+              <s>$130</s>
             </p>
           </h3>
           {/* <p className="italic text-sm text-gray-500">+ GST(10%)</p> */}

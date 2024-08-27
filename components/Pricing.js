@@ -7,7 +7,7 @@ export default function Pricing() {
     {
       title: "Study Material",
       price: "AU$ 749",
-      anchoredPrice: "A$ 900",
+      anchoredPrice: "A$ 1400",
       features: [
         "30 Week LMS Access",
         "All Study Books",
@@ -20,7 +20,7 @@ export default function Pricing() {
     {
       title: "Full ADC Exam Prep",
       price: "AU$ 1349",
-      anchoredPrice: "A$ 1800",
+      anchoredPrice: "A$ 2400",
       label: "Early Bird Pricing",
       features: [
         "Complete Study Material",
@@ -36,7 +36,7 @@ export default function Pricing() {
     {
       title: "Mock Test",
       price: "AU$ 49",
-      anchoredPrice: "A$ 80",
+      anchoredPrice: "A$ 130",
       features: [
         "Complete Exam Simulation",
         "Recent exam SBQs",
