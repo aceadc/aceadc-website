@@ -119,8 +119,7 @@ export default function ProvenPathwaySection() {
   return (
     <div>
       <SectionWithHeading
-        heading="Join the proven pathway"
-        darkBackground="true"
+        heading="Join the 4-Step Success Framework"
       >
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
           We are redefining traditional approaches and offer aspiring dentists

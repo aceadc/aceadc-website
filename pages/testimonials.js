@@ -131,6 +131,62 @@ export default function Home() {
                         <div className="rounded-lg w-14 h-14 lg:w-24 lg:h-24 flex-shrink-0">
                           <img
                             className="object-cover rounded-lg"
+                            src="/avatars/sai-headshot.png"
+                          />
+                        </div>
+                        <div className="pt-3">
+                          <p className="font-bold">Arjun Kapoor</p>
+                          <p className="text-sm pt-1 text-gray-400">
+                            '24 Cohort
+                          </p>
+                          <p className="text-sm">🇮🇳 India</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-span-8 relative lg:text-xl lg:leading-relaxed space-y-8 pt-8 lg:pt-16">
+                      <blockquote>
+                        As someone with a busy schedule, I needed a flexible and
+                        accessible learning platform to prepare for the ADC
+                        exam. Ace ADC exceeded my expectations with its
+                        user-friendly interface and comprehensive study
+                        materials. Thanks to Ace ADC, I'm now well on my way to
+                        pursuing my dental career in Australia!
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
+                    <div className="col-span-4 lg:text-right pt-2">
+                      <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
+                        <div className="rounded-lg w-14 h-14 lg:w-24 lg:h-24 flex-shrink-0">
+                          <img
+                            className="object-cover rounded-lg"
+                            src="/avatars/aiman-headshot.png"
+                          />
+                        </div>
+                        <div className="pt-3">
+                          <p className="font-bold">Aiman Ali</p>
+                          <p className="text-sm pt-1 text-gray-400">
+                            '23 Cohort
+                          </p>
+                          <p className="text-sm">🇵🇰 Pakistan</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-span-8 relative lg:text-xl lg:leading-relaxed space-y-8 pt-8 lg:pt-16">
+                      <blockquote>
+                        Ace ADC's community forum was a game-changer for me.
+                        Being able to connect with fellow dental professionals
+                        navigating the same journey made all the difference.
+                        It's like having a supportive family cheering you on!
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
+                    <div className="col-span-4 lg:text-right pt-2">
+                      <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
+                        <div className="rounded-lg w-14 h-14 lg:w-24 lg:h-24 flex-shrink-0">
+                          <img
+                            className="object-cover rounded-lg"
                             src="/avatars/maria-headshot.png"
                           />
                         </div>

@@ -9,6 +9,7 @@ import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import BlogCarrousel from "../components/BlogCarrousel";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
+import Faq from "../components/Faq";
 import Timeline from "../components/Timeline";
 import hiringNetworkData from "./../data/hiring-network.json";
 import facultyMembersData from "./../data/faculty-members.json";
@@ -64,11 +65,11 @@ export default function Home(props) {
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto overflow-x-hidden">
         <section className="mx-auto relative">
           <div className="bg-gray-800 p-2 border-t border-gray-900 rounded-md">
-            <a href="/pricing">
+            <a href="#pricing">
               <div className="w-max mx-auto bg-gradient-to-br from-gray-700 to-gray-900 border border-red-400 rounded-lg shadow-md p-3 md:p-4 text-center">
-                <p className="text-white text-l md:text-l lg:text-xl font-bold leading-tight md:leading-normal">
+                <h3 className="text-white text-l md:text-l lg:text-xl font-bold leading-tight md:leading-normal">
                   Apply now for the 2025 Cohort
-                </p>
+                </h3>
               </div>
             </a>
           </div>
@@ -79,7 +80,7 @@ export default function Home(props) {
             <img
               className="h-full w-full object-cover relative"
               src="hero/hero-bg.webp"
-              alt="Ace ADC - hero background image"
+              alt="Student preparing for ADC exam with Ace ADC"
             />
             <div className="absolute inset-0"></div>
           </div>
@@ -95,22 +96,16 @@ export default function Home(props) {
                   Ace ADC
                 </h1>
               </a>
-
-              {/* <img
-                className="w-16 p-2 bg-white rounded-full md:w-24"
-                src="logos/atal.png"
-                alt="Logo of All India Council for Technical Education (AICTE)Training And Learning"
-              /> */}
             </div>
           </header>
           <div className="pb-1 px-4 xl:px-0 pt-5">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center mt-5">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
-                <h1 className="text-primary-500 text-xl md:text-xl lg:text-xl 2xl:text-3xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
+                <h2 className="text-primary-500 text-xl md:text-xl lg:text-xl 2xl:text-3xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
                   Your Journey to become an{" "}
                   <span className="text-white">Australian Dentist</span> starts
                   here
-                </h1>
+                </h2>
                 <p className="pr-2 mt-10 text-small text-white leading-relaxed">
                   <i>
                     Our goal is to provide the most affordable and effective
@@ -131,8 +126,8 @@ export default function Home(props) {
                 </p>
                 <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
-                    href="/pricing"
-                    className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+                    href="#pricing"
+                    className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-900 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
                     Enroll Now
                   </a>
@@ -214,8 +209,8 @@ export default function Home(props) {
             />
           </svg>
         </section>
-
-        <SectionWithHeading heading="ADC Written Exam 1 Preparation">
+        <ProvenPathwaySection />
+        {/* <SectionWithHeading heading="ADC Written Exam 1 Preparation">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             The Ace ADC curriculum is offered to students through an advanced
             Learning Management System. These courses will impart skill
@@ -341,9 +336,9 @@ export default function Home(props) {
                 />
               </svg>
             </span>
-          </a>
+          </a> */}
 
-          {/* <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
+        {/* <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
             <a
               id="apply-button-below-video"
               href="https://apply.pupilfirst.org/apply/forms/9"
@@ -353,7 +348,8 @@ export default function Home(props) {
               Start your journey of becoming a Full Stack developer
             </a>
           </div> */}
-        </SectionWithHeading>
+
+        {/* </SectionWithHeading> */}
 
         {/* <SectionWithHeading
           heading="Experience the future of Exam Prep"
@@ -611,11 +607,11 @@ export default function Home(props) {
                   </svg>
 
                   <p className="text-gray-500 text-lg font-semibold">
-                    Live Since
+                    Pass Rate
                   </p>
                 </div>
                 <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
-                  March 2023
+                  98% Exam Pass Rate
                 </p>
               </div>
 
@@ -641,7 +637,7 @@ export default function Home(props) {
                   </p>
                 </div>
                 <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
-                  5+ and counting
+                  100+ and counting
                 </p>
               </div>
             </div>
@@ -685,7 +681,9 @@ export default function Home(props) {
         <SectionWithHeading heading="Key Timelines">
           <Timeline />
         </SectionWithHeading>
-        <Pricing />
+        <div id="pricing">
+          <Pricing />
+        </div>
 
         <div className="border border-gray-700 py-10">
           <div className="max-w-7xl mx-auto px-3">
@@ -697,17 +695,20 @@ export default function Home(props) {
               <a
                 id="apply-button-footer-cta"
                 href="/pricing"
-                className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+                className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-indigo-900 hover:text-white hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
-                Click here to Apply
+                Start Your Journey Now
               </a>
             </div>
           </div>
         </div>
 
         <Testimonials />
+        <div>
+          <Faq />
+        </div>
 
-        <BlogCarrousel />
+        {/* <BlogCarrousel /> */}
 
         <div className="border-t border-gray-700 py-20">
           <div className="max-w-7xl mx-auto px-3">

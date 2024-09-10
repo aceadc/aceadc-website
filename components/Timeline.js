@@ -17,6 +17,14 @@ let timelineList = [
     date: "11-12 September 2024",
     event: "ADC Written Exam",
   },
+  {
+    date: "15 Dec 2024",
+    event: "Ace ADC March 2025 Cohort Orientation",
+  },
+  {
+    date: "1 Feb 2024",
+    event: "Ace ADC Applications Close",
+  },
 ];
 
 const TimelineItem = ({ date, event }) => {

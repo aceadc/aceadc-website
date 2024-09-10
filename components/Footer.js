@@ -10,9 +10,17 @@ export default function Footer() {
               className={`flex flex-col gap-4 text-white md:text-left text-center mt-10 md:mt-0`}
             >
               <p className="text-white font-bold">About</p>
+              <a href="/pricing">
+                <p>Pricing</p>
+              </a>
               <a href="/testimonials">
                 <p>Success Stories</p>
               </a>
+            </div>
+            <div
+              className={`flex flex-col gap-4 text-white text-center md:text-left mt-10 md:mt-0`}
+            >
+              <p className="text-white font-bold">Legal</p>
               <a href="/privacy">
                 <p>Privacy Policy</p>
               </a>

@@ -5,9 +5,12 @@ export default function Document() {
     <Html>
       <Head>
         {/* Posthog */}
+        <script async src="/posthog.js"></script>
+
+        {/* Tidio Chatbot */}
         <script
+          src="//code.tidio.co/j9cbswajqzsl5bjumoytsqhp6cwjew9s.js"
           async
-          src='/posthog.js'
         ></script>
 
         {/* Google Analytics */}

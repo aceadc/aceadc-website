@@ -9,9 +9,11 @@ export default function Pricing() {
       price: "AU$ 749",
       anchoredPrice: "A$ 1400",
       features: [
-        "30 Week LMS Access",
+        "30 Week Access to Study Materials via LMS",
         "All Study Books",
-        "Access to Community",
+        "Self-Paced Topic Specific Quizzes & Mock Exams",
+        "Updated Topic-specific Material from Recent Exam",
+        "Access to Ace ADC Peer & Mentor Community",
       ],
       buttonLink: "https://buy.stripe.com/fZe7wa5cq3Qtg3m005",
       buttonText: "Apply Now",
@@ -23,11 +25,13 @@ export default function Pricing() {
       anchoredPrice: "A$ 2400",
       label: "Early Bird Pricing",
       features: [
-        "Complete Study Material",
-        "75+ Video Training Hours",
-        "Ace ADC Quizzes + SBCs",
-        "Exam Shortcuts",
-        "Chat Support for doubts",
+        "Full LMS access, video lectures, and tools",
+        "Extensive preparation time with full 30 Week LMS access",
+        "Topic-Specific Video Tutorials",
+        "Ace ADC Quizzes & SBCs",
+        "Exam Performance Shortcuts",
+        "Personalized Instructor Support",
+        "Access to Ace ADC Peer & Mentor Community",
       ],
       buttonLink: "https://buy.stripe.com/5kAdUyawK86Jg3m5kq",
       buttonText: "Apply Now",
@@ -39,8 +43,10 @@ export default function Pricing() {
       anchoredPrice: "A$ 130",
       features: [
         "Complete Exam Simulation",
-        "Recent exam SBQs",
-        "Upto 5 different mocks",
+        "5 Updated Mock Tests from Latest Exam",
+        "Current Exam Guidelines",
+        "Advanced Performance Insights and Review",
+        "Instructor Remarks & Assessment",
       ],
       buttonLink: "",
       buttonText: "Available in 2025",
@@ -60,7 +66,7 @@ export default function Pricing() {
             key={idx}
             className={`rounded-lg relative flex flex-col mt-4 mb-6 items-center bg-white border ${
               plan.title === "Extended" ? "border-apple-blue" : "border-grey"
-            } w-full md:w-[300px] p-8 rounded-xl shadow-md ${
+            } w-full md:w-[300px] p-7 rounded-xl shadow-md ${
               plan.title === "Extended" ? "shadow-lg transform scale-105" : ""
             } transition-all`}
           >
@@ -84,8 +90,8 @@ export default function Pricing() {
             <ul className="text-[#383d49] text-m space-y-3">
               {plan.features.map((feature, idx) => (
                 <li key={idx} className="flex items-center gap-3">
-                  <FaCheck className="text-deep-navy" size="1.2em" />
-                  {feature}
+                  <b>{"-"}</b>
+                  <span className="text-left">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -96,7 +102,7 @@ export default function Pricing() {
                 <a
                   id="apply-button-footer-cta"
                   href={plan.buttonLink}
-                  className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+                  className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-indigo-900 hover:text-white hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                 >
                   {plan.buttonText}
                 </a>
