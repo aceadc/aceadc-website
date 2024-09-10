@@ -63,10 +63,9 @@ export default function Testimonials() {
 
   return (
     <div>
-      <SectionWithHeading heading="Testimonials" darkBackground={true}>
+      <SectionWithHeading heading="Testimonials">
         <div className="flex flex-col items-center mt-12">
           <div className="relative w-full md:w-5/6 flex items-center justify-center">
-
             <div className="">
               {/* Arrow buttons */}
               {testimonialList.length > 2 && (

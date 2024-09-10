@@ -118,9 +118,7 @@ export default function ProvenPathwaySection() {
 
   return (
     <div>
-      <SectionWithHeading
-        heading="Join the 4-Step Success Framework"
-      >
+      <SectionWithHeading heading="Join the 4-Step Success Framework">
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
           We are redefining traditional approaches and offer aspiring dentists
           an unparalleled academic environment, and all the tools required to
@@ -338,6 +336,14 @@ export default function ProvenPathwaySection() {
               </p>
             </Step>
           </div>
+        </div>
+        <div className="text-center mt-4 pt-4">
+          <a
+            href="#pricing"
+            className="inline-block space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-900 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+          >
+            🚀 Launch Your Dental Career Today
+          </a>
         </div>
       </SectionWithHeading>
     </div>

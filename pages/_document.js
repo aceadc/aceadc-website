@@ -5,7 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         {/* Posthog */}
-        <script async src="/posthog.js"></script>
+        {/* <script async src="/posthog.js"></script> */}
 
         {/* Tidio Chatbot */}
         <script

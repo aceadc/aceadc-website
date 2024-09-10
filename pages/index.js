@@ -11,6 +11,7 @@ import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
 import Faq from "../components/Faq";
 import Timeline from "../components/Timeline";
+import WhoisAceFor from "../components/WhoisAceFor";
 import hiringNetworkData from "./../data/hiring-network.json";
 import facultyMembersData from "./../data/faculty-members.json";
 
@@ -129,7 +130,7 @@ export default function Home(props) {
                     href="#pricing"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-900 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
-                    Enroll Now
+                    Begin Your Dental Journey
                   </a>
 
                   <svg
@@ -384,31 +385,43 @@ export default function Home(props) {
         </SectionWithHeading> */}
 
         <SectionWithHeading heading="Who is Ace ADC for" darkBackground="true">
+          <WhoisAceFor />
+        </SectionWithHeading>
+
+        {/* <SectionWithHeading heading="Who is Ace ADC for" darkBackground="true">
           <div>
             <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-              Ace ADC is tailored for dental professionals seeking to prepare
-              for the Australian Dental Council (ADC) written exam through
-              self-study.
-              <br />
-              <br />
-              Unlike traditional courses, Ace ADC focuses on providing the best
-              study resources and a world-class Learning Management System (LMS)
-              to facilitate efficient exam preparation. Our platform offers
-              self-paced quizzes, comprehensive study materials, and expert
-              guidance - NOT lengthy, repetetive, video lectures.
-              <br />
-              <br />
-              Ace ADC is significantly more affordable and accessible, making it
-              the ideal choice for those looking to excel in their ADC exam
-              preparation journey.
-              <br />
-              <br />
-              Whether you're a recent graduate looking to practice dentistry in
-              Australia or an international experienced practitioner seeking
-              licensure in a Australia, Ace ADC provides the resources and
-              support you need to succeed. Our platform caters to individuals at
-              all stages of their dental careers, offering comprehensive study
-              materials, and guidance to help you achieve your goals.
+              <ul className="list-disc list-inside">
+                <li>
+                  Tailored for Dental Professionals: Specifically designed for
+                  those preparing for the Australian Dental Council (ADC)
+                  written exam through self-study.
+                </li>
+                <li>
+                  Focus on Study Resources: Offers the best study materials and
+                  a world-class Learning Management System (LMS) for efficient
+                  exam preparation.
+                </li>
+                <li>
+                  Self-Paced Learning: Access self-paced quizzes, comprehensive
+                  study materials, and expert guidance without lengthy,
+                  repetitive video lectures.
+                </li>
+                <li>
+                  Affordable and Accessible: Significantly more affordable and
+                  accessible compared to traditional courses.
+                </li>
+                <li>
+                  Ideal for All Stages: Whether you're a recent graduate or an
+                  experienced international practitioner, Ace ADC provides the
+                  resources and support needed to excel.
+                </li>
+                <li>
+                  Comprehensive Preparation: Offers study materials and guidance
+                  tailored to help you achieve success in the ADC exam and your
+                  dental career in Australia.
+                </li>
+              </ul>
               <br />
               <br />
               <a
@@ -421,9 +434,9 @@ export default function Home(props) {
               dentistry!
             </p>
           </div>
-        </SectionWithHeading>
+        </SectionWithHeading> */}
 
-        <SectionWithHeading heading="🇦🇺 Australia needs Doctors*">
+        {/* <SectionWithHeading heading="🇦🇺 Australia needs Doctors*">
           <div>
             <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
               Join a diverse cohort of students and gain access to carefully
@@ -450,7 +463,10 @@ export default function Home(props) {
               </a>
             </p>
           </div>
-          {/* <div className="relative">
+        </SectionWithHeading>
+           */}
+
+        {/* <div className="relative">
             <p className="pt-4 md:text-lg text-white">
               <span className="font-semibold md:text-indigo-400">
                 Watch video
@@ -487,7 +503,7 @@ export default function Home(props) {
               </svg>
             </div>
           </div> */}
-          {/* <div className="mt-2 shadow-2xl rounded-xl">
+        {/* <div className="mt-2 shadow-2xl rounded-xl">
             <div style={{ padding: "42.58% 0 0 0", position: "relative" }}>
               <iframe
                 className="rounded-xl"
@@ -506,24 +522,16 @@ export default function Home(props) {
               ></iframe>
             </div>
           </div> */}
-        </SectionWithHeading>
 
-        <SectionWithHeading
-          heading="The Power of a Community"
-          darkBackground="true"
-        >
+        <SectionWithHeading heading="The Power of a Community">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            At Ace ADC, we understand that embarking on a journey to a new
-            country can be daunting. That's why our online learning platform is
-            more than just a place for courses — it's a vibrant community where
-            students from around the world come together to support and uplift
-            each other. Through our unique forum, you can connect with peers,
-            share experiences, and find guidance from solving a problem.
+            At Ace ADC, our online platform is a vibrant community where
+            students worldwide connect, share experiences, and support each
+            other.
             <br />
             <br />
-            The ADC Exam is just the first challenge and at Ace ADC, we want to
-            help you navigate challenges, celebrate victories, and forge lasting
-            connections as we pursue our dreams in Australian dentistry.
+            We’re here to help you navigate the ADC exam and beyond, celebrating
+            victories and building lasting connections in Australian dentistry.
           </p>
           <div className="md:grid flex flex-col gap-12 md:gap-24 items-center md:grid-cols-12 mt-8 z-10">
             <div className="col-span-6">
@@ -674,11 +682,19 @@ export default function Home(props) {
               fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
             />
           </svg>
+          <div className="text-center mt-5 pt-4">
+            <a
+              href="#pricing"
+              className="inline-block space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-900 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+            >
+              Join the Ace ADC community today
+            </a>
+          </div>
         </SectionWithHeading>
 
         {/* <LearnerShowcase darkBackground="true" /> */}
 
-        <SectionWithHeading heading="Key Timelines">
+        <SectionWithHeading heading="Key Timelines" darkBackground="true">
           <Timeline />
         </SectionWithHeading>
         <div id="pricing">
@@ -694,7 +710,7 @@ export default function Home(props) {
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="/pricing"
+                href="#pricing"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-indigo-900 hover:text-white hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Start Your Journey Now
