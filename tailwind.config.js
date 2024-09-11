@@ -10,6 +10,18 @@ module.exports = {
       },
       colors: {
         cyan: colors.cyan,
+        orange: {
+          50: "#FDFAF7",
+          100: "#FCEEE2",
+          200: "#F9DBC1",
+          300: "#F7BD8D",
+          400: "#F6904D",
+          500: "#FD6400",
+          600: "#E05900",
+          700: "#C75000",
+          800: "#9E3F00",
+          900: "#803300",
+        },
         primary: {
           50: "#FFFCF3",
           100: "#FFD761",
