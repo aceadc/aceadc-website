@@ -29,6 +29,12 @@ export default function Document() {
           }}
         />
 
+        {/* Facebook Meta Tag */}
+        <meta
+          name="facebook-domain-verification"
+          content="s67cp2q4pq09ftugcdo93dyrqaz1x9"
+        />
+
         {/* Responsive Meta */}
         <meta
           name="viewport"
