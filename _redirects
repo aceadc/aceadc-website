@@ -1,1 +1,2 @@
-https://sources.prepforadc.com /freebie 301
+# http and https need separate rules if you don’t force_ssl!
+https://sources.prepforadc.com/* https://www.aceadc.com/freebie 301!
