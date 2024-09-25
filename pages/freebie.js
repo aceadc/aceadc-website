@@ -47,6 +47,29 @@ let testimonialList = [
   },
 ];
 
+let itemList = [
+  {
+    title: "📚 Access 10 essential dental books",
+    text: "all in one place.",
+  },
+  {
+    title: "🔑 Free LMS access",
+    text: "study anytime, anywhere, on any device.",
+  },
+  {
+    title: "🦷 Covers key ADC exam topics",
+    text: "Endodontics, Oral Surgery, Radiology & more",
+  },
+  {
+    title: "🚀 Boost your prep",
+    text: "with important study material from Odell, Abbott and Profitt.",
+  },
+  {
+    title: "🎯 Exclusive to Ace ADC",
+    text: "start your journey to passing the ADC exam today!",
+  },
+];
+
 export default function HomePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -61,6 +84,17 @@ export default function HomePage() {
       prevIndex === 0 ? testimonialList.length - 1 : prevIndex - 1
     );
   };
+
+  const LiItem = ({ title, text }) => {
+    return (
+      <div className="grid md:grid-cols-4 text-gray-800">
+        <p className="col-span-3 p-4 pt-0 pl-0 md:pl-8 md:pt-4">
+          <span>•</span> <b>{title}</b> : {text}
+        </p>
+      </div>
+    );
+  };
+
   return (
     <div className="bg-gradient-to-b from-gray-200 to-silver min-h-screen flex flex-col justify-between">
       {/* Header */}
@@ -87,15 +121,15 @@ export default function HomePage() {
             alt="Background"
             layout="fill"
             objectfit="cover"
-            className="opacity-60"
+            className="w-full h-full object-cover opacity-60"
           />
         </div>
 
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6 space-y-8 md:space-y-0">
           {/* Left Side: Text Content */}
-          <div className="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-            <h1 className="text-10xl font-bold text-indigo-800">
-              Download Free Study Material
+          <div className="mr-20 ml-w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-800">
+              Get Access to our Free Study Material
             </h1>
             <p className="text-lg text-gray-700 mt-4">
               <a
@@ -105,19 +139,30 @@ export default function HomePage() {
                 Kickstart your ADC exam prep
               </a>{" "}
               with these valuable resources. Perfect for both recent graduates
-              and experienced practitioners aiming to practice in Australia.
-              Download your free copies today and start studying smarter.
+              and experienced practitioners aiming to practice in Australia. Get
+              access to your free copies today and start studying smarter.
             </p>
+
+            <div className="py-8 md:12">
+              <div className="hidden md:block"></div>
+              {itemList.map((timelineItem, index) => (
+                <LiItem
+                  key={index}
+                  title={timelineItem.title}
+                  text={timelineItem.text}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Right Side: Form */}
-
-          {/* Sender Script */}
-          <Script
-            id="sender-script"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+          <div className="w-full md:w-1/2">
+            {/* Sender Script */}
+            <Script
+              id="sender-script"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
             (function (s, e, n, d, er) {
               s['Sender'] = er;
               s[er] = s[er] || function () {
@@ -131,14 +176,15 @@ export default function HomePage() {
             })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
             sender('aceb5a7aef2115');
           `,
-            }}
-          />
-          {/* The div for the form */}
-          <div
-            style={{ textAlign: "left" }}
-            className="sender-form-field"
-            data-sender-form-id="m0xh3735bmzrv96zd3h"
-          ></div>
+              }}
+            />
+            {/* The div for the form */}
+            <div
+              style={{ textAlign: "left" }}
+              className="sender-form-field"
+              data-sender-form-id="m0xh3735bmzrv96zd3h"
+            ></div>
+          </div>
         </div>
       </main>
 
@@ -214,25 +260,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      </div>
-
-      {/* CTA */}
-      <div className="border border-gray-300 py-5">
-        <div className="max-w-7xl mx-auto px-5">
-          <div className="p-12 rounded-lg bg-gradient-to-r from-yellow-400 to-orange-500 border border-orange-400 shadow-xl flex flex-col items-center text-center gap-6">
-            <h3 className="text-white text-xl md:text-3xl font-semibold mt-3 w-full md:w-4/5">
-              Your Career in Dentistry Starts here
-              <br />
-            </h3>
-            <a
-              id="apply-button-footer-cta"
-              href="/#pricing"
-              className="z-50 inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-indigo-900 hover:text-white hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-            >
-              Get Started Now
-            </a>
-          </div>
-        </div>
       </div>
 
       {/* Footer */}
