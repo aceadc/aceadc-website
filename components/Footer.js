@@ -16,6 +16,9 @@ export default function Footer() {
               <a href="/testimonials">
                 <p>Success Stories</p>
               </a>
+              <a href="https://lms.aceadc.com">
+                <p>LMS</p>
+              </a>
             </div>
             <div
               className={`flex flex-col gap-4 text-white text-center md:text-left mt-10 md:mt-0`}

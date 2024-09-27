@@ -114,7 +114,7 @@ export default function HomePage() {
       </header>
 
       {/* Main Content */}
-      <main className="relative mt-20 mb-20 flex-1 flex items-center justify-center">
+      <main className="relative mt-20 mb-20 flex-1 flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
             src="hero/hero-bg.png"
@@ -125,25 +125,27 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6 space-y-8 md:space-y-0">
-          {/* Left Side: Text Content */}
-          <div className="mr-20 ml-w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-800">
-              Get Access to our Free Study Material
-            </h1>
-            <p className="text-lg text-gray-700 mt-4">
-              <a
-                className="underline font-bold text-primary-600 hover:text-indigo-600"
-                href="/#pricing"
-              >
-                Kickstart your ADC exam prep
-              </a>{" "}
-              with these valuable resources. Perfect for both recent graduates
-              and experienced practitioners aiming to practice in Australia. Get
-              access to your free copies today and start studying smarter.
-            </p>
+        {/* Centered H1 Heading */}
+        <div className="relative z-10 text-center px-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-800">
+            Get Access to our Free Study Material
+          </h1>
+        </div>
 
-            <div className="py-8 md:12">
+        {/* Content: Left and Right Side */}
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6 space-y-8 md:space-y-0 mt-10">
+          {/* Left Side: Text Content */}
+          <div className="mr-20 w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-center">
+            {/* Centered Image */}
+            <div className="flex justify-center pl-1 my-3">
+              <img
+                src="/books/FreeBookBundle.png"
+                alt="Free Book Bundle"
+                className="w-full md:w-full lg:w-5/6 xl:w-4/5"
+              />
+            </div>
+
+            <div className="md:14 pl-10 md:px-0">
               <div className="hidden md:block"></div>
               {itemList.map((timelineItem, index) => (
                 <LiItem
@@ -179,11 +181,32 @@ export default function HomePage() {
               }}
             />
             {/* The div for the form */}
-            <div
-              style={{ textAlign: "left" }}
-              className="sender-form-field"
-              data-sender-form-id="m0xh3735bmzrv96zd3h"
-            ></div>
+            <div className="flex flex-col items-center justify-center">
+              <div
+                style={{ textAlign: "left" }}
+                className="sender-form-field"
+                data-sender-form-id="m0xh3735bmzrv96zd3h"
+              ></div>
+              <p className="text-lg text-gray-700 mt-10 text-center md:text-left">
+                <a
+                  className="underline font-bold text-primary-600 hover:text-indigo-600"
+                  href="/#pricing"
+                >
+                  Kickstart your ADC exam prep
+                </a>{" "}
+                with these valuable resources. Perfect for both recent graduates
+                and experienced practitioners aiming to practice in Australia.
+                <br />
+                <br />
+                These books cover crucial topics to help you strengthen your
+                knowledge and boost exam confidence. Whether you're brushing up
+                on key concepts or diving into new material, these resources are
+                designed to support your success.
+                <br />
+                <br />
+                Fill the form above to get access to your free copies and start studying smarter.
+              </p>
+            </div>
           </div>
         </div>
       </main>
