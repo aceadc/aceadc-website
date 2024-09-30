@@ -62,6 +62,10 @@ export default function Home(props) {
         <meta name="twitter:card" content="/logo.png" />
         <meta property="og:site_name" content="Ace ADC" />
         <meta name="Ace ADC offers comprehensive preparation for the ADC exam's written part 1. Prepare with expert guidance and resources tailored for success. Start your ADC prep journey today with Ace ADC"></meta>
+        <meta
+          name="facebook-domain-verification"
+          content="mvf3m03x6fxqjlzdewipip9uon8f1f"
+        />
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto overflow-x-hidden">
         <section className="mx-auto relative">

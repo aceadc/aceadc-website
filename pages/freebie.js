@@ -3,6 +3,7 @@ import Image from "next/image";
 import SectionWithHeading from "../components/SectionWithHeading";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Script from "next/script";
+import Head from "next/head";
 
 let testimonialList = [
   {
@@ -96,75 +97,82 @@ export default function HomePage() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-200 to-silver min-h-screen flex flex-col justify-between">
-      {/* Header */}
-      <header className="bg-gradient-to-b from-gray-200 to-silver py-4 lg:py-8">
-        <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 xl:px-0 flex justify-between items-center">
-          <a className="flex items-center" href="/">
-            <img
-              className="block w-20 md:w-20"
-              src="logos/ace-logo-1.png"
-              alt="Logo of Ace ADC"
-            />
-            <h1 className="ml-2 text-4xl md:text-4xl pb-2 text-gray-800">
-              Ace ADC
-            </h1>
-          </a>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="relative mt-20 mb-20 flex-1 flex flex-col items-center justify-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="hero/hero-bg.png"
-            alt="Background"
-            layout="fill"
-            objectfit="cover"
-            className="w-full h-full object-cover opacity-60"
-          />
-        </div>
-
-        {/* Centered H1 Heading */}
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-indigo-800">
-            Get Access to our Free Study Material
-          </h1>
-        </div>
-
-        {/* Content: Left and Right Side */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6 space-y-8 md:space-y-0 mt-10">
-          {/* Left Side: Text Content */}
-          <div className="mr-20 w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-center">
-            {/* Centered Image */}
-            <div className="flex justify-center pl-14 pb-6">
+    <div>
+      <Head>
+        <meta
+          name="facebook-domain-verification"
+          content="mvf3m03x6fxqjlzdewipip9uon8f1f"
+        />
+      </Head>
+      <div className="bg-gradient-to-b from-gray-200 to-silver min-h-screen flex flex-col justify-between">
+        {/* Header */}
+        <header className="bg-gradient-to-b from-gray-200 to-silver py-4 lg:py-8">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 xl:px-0 flex justify-between items-center">
+            <a className="flex items-center" href="/">
               <img
-                src="/books/FreeBookBundle.png"
-                alt="Free Book Bundle"
-                className="w-full md:w-full lg:w-5/6 xl:w-4/5"
+                className="block w-20 md:w-20"
+                src="logos/ace-logo-1.png"
+                alt="Logo of Ace ADC"
               />
-            </div>
+              <h1 className="ml-2 text-4xl md:text-4xl pb-2 text-gray-800">
+                Ace ADC
+              </h1>
+            </a>
+          </div>
+        </header>
 
-            <div className="pl-20 flex flex-col items-center">
-              <div className="hidden md:block"></div>
-              {itemList.map((timelineItem, index) => (
-                <LiItem
-                  key={index}
-                  title={timelineItem.title}
-                  text={timelineItem.text}
-                />
-              ))}
-            </div>
+        {/* Main Content */}
+        <main className="relative mt-20 mb-20 flex-1 flex flex-col items-center justify-center">
+          <div className="absolute inset-0 z-0">
+            <img
+              src="hero/hero-bg.png"
+              alt="Background"
+              layout="fill"
+              objectfit="cover"
+              className="w-full h-full object-cover opacity-60"
+            />
           </div>
 
-          {/* Right Side: Form */}
-          <div className="w-full md:w-1/2">
-            {/* Sender Script */}
-            <Script
-              id="sender-script"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
+          {/* Centered H1 Heading */}
+          <div className="relative z-10 text-center px-6">
+            <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-indigo-800">
+              Get Access to our Free Study Material
+            </h1>
+          </div>
+
+          {/* Content: Left and Right Side */}
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto p-6 space-y-8 md:space-y-0 mt-10">
+            {/* Left Side: Text Content */}
+            <div className="mr-20 w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-center">
+              {/* Centered Image */}
+              <div className="flex justify-center pl-14 pb-6">
+                <img
+                  src="/books/FreeBookBundle.png"
+                  alt="Free Book Bundle"
+                  className="w-full md:w-full lg:w-5/6 xl:w-4/5"
+                />
+              </div>
+
+              <div className="pl-20 flex flex-col items-center">
+                <div className="hidden md:block"></div>
+                {itemList.map((timelineItem, index) => (
+                  <LiItem
+                    key={index}
+                    title={timelineItem.title}
+                    text={timelineItem.text}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Right Side: Form */}
+            <div className="w-full md:w-1/2">
+              {/* Sender Script */}
+              <Script
+                id="sender-script"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
             (function (s, e, n, d, er) {
               s['Sender'] = er;
               s[er] = s[er] || function () {
@@ -178,179 +186,181 @@ export default function HomePage() {
             })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
             sender('aceb5a7aef2115');
           `,
-              }}
-            />
-            {/* The div for the form */}
-            <div className="flex flex-col items-center justify-center">
-              <div
-                style={{ textAlign: "left" }}
-                className="sender-form-field"
-                data-sender-form-id="m0xh3735bmzrv96zd3h"
-              ></div>
-              <p className="text-lg text-gray-700 mt-10 text-center md:text-left">
-                <a
-                  className="underline font-bold text-primary-600 hover:text-indigo-600"
-                  href="/#pricing"
-                >
-                  Kickstart your ADC exam prep
-                </a>{" "}
-                with these valuable resources. Perfect for both recent graduates
-                and experienced practitioners aiming to practice in Australia.
-                <br />
-                <br />
-                These books cover crucial topics to help you strengthen your
-                knowledge and boost exam confidence. Whether you're brushing up
-                on key concepts or diving into new material, these resources are
-                designed to support your success.
-                <br />
-                <br />
-                Fill the form above to get access to your free copies and start
-                studying smarter.
-              </p>
+                }}
+              />
+              {/* The div for the form */}
+              <div className="flex flex-col items-center justify-center">
+                <div
+                  style={{ textAlign: "left" }}
+                  className="sender-form-field"
+                  data-sender-form-id="m0xh3735bmzrv96zd3h"
+                ></div>
+                <p className="text-lg text-gray-700 mt-10 text-center md:text-left">
+                  <a
+                    className="underline font-bold text-primary-600 hover:text-indigo-600"
+                    href="/#pricing"
+                  >
+                    Kickstart your ADC exam prep
+                  </a>{" "}
+                  with these valuable resources. Perfect for both recent
+                  graduates and experienced practitioners aiming to practice in
+                  Australia.
+                  <br />
+                  <br />
+                  These books cover crucial topics to help you strengthen your
+                  knowledge and boost exam confidence. Whether you're brushing
+                  up on key concepts or diving into new material, these
+                  resources are designed to support your success.
+                  <br />
+                  <br />
+                  Fill the form above to get access to your free copies and
+                  start studying smarter.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
-      <div>
-        <section className="bg-gray-100 border-t border-gray-300 relative">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="hero/hero-bg.png" // Replace with your image path
-              alt="Background"
-              layout="fill"
-              objectfit="cover"
-              className="opacity-70"
-            />
-          </div>
-          <div className="max-w-6xl 2xl:max-w-7xl mx-auto ">
-            <div className="mx-4  xl:mx-0 border-l border-gray-700">
-              <div className="py-10 lg:py-16">
-                <div className="heading-with-leftborder">
-                  <h2 className="font-bold text-2xl lg:text-5xl text-indigo-800 leading-tight ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                    Success Stories
-                  </h2>
-                </div>
-                <div className="max-w-6xl ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                  <div className="flex flex-col items-center mt-12">
-                    <div className="mb-7 relative w-full md:h-6/6 md:w-5/6 flex items-center justify-center ">
-                      {/* Arrow buttons */}
-                      {testimonialList.length > 2 && (
-                        <>
-                          <button
-                            onClick={prevTestimonial}
-                            className="absolute left-0 top-3/4 transform -translate-y-1/2 text-indigo-400 hover:text-indigo-500"
-                          >
-                            <FaArrowLeft size={37} />
-                          </button>
-                          <button
-                            onClick={nextTestimonial}
-                            className="absolute right-0 top-3/4 transform -translate-y-1/2 text-indigo-400 hover:text-indigo-500"
-                          >
-                            <FaArrowRight size={37} />
-                          </button>
-                        </>
-                      )}
-                    </div>
-                    <div className="relative w-full md:w-5/6 flex items-center justify-center">
-                      <div className="w-full">
-                        <Testimonial
-                          name={testimonialList[currentIndex].name}
-                          batch={testimonialList[currentIndex].batch}
-                          country={testimonialList[currentIndex].country}
-                          testimony={testimonialList[currentIndex].testimony}
-                          imageSrc={testimonialList[currentIndex].imageSrc}
-                        />
+        <div>
+          <section className="bg-gray-100 border-t border-gray-300 relative">
+            <div className="absolute inset-0 z-0">
+              <img
+                src="hero/hero-bg.png" // Replace with your image path
+                alt="Background"
+                layout="fill"
+                objectfit="cover"
+                className="opacity-70"
+              />
+            </div>
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto ">
+              <div className="mx-4  xl:mx-0 border-l border-gray-700">
+                <div className="py-10 lg:py-16">
+                  <div className="heading-with-leftborder">
+                    <h2 className="font-bold text-2xl lg:text-5xl text-indigo-800 leading-tight ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                      Success Stories
+                    </h2>
+                  </div>
+                  <div className="max-w-6xl ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                    <div className="flex flex-col items-center mt-12">
+                      <div className="mb-7 relative w-full md:h-6/6 md:w-5/6 flex items-center justify-center ">
+                        {/* Arrow buttons */}
+                        {testimonialList.length > 2 && (
+                          <>
+                            <button
+                              onClick={prevTestimonial}
+                              className="absolute left-0 top-3/4 transform -translate-y-1/2 text-indigo-400 hover:text-indigo-500"
+                            >
+                              <FaArrowLeft size={37} />
+                            </button>
+                            <button
+                              onClick={nextTestimonial}
+                              className="absolute right-0 top-3/4 transform -translate-y-1/2 text-indigo-400 hover:text-indigo-500"
+                            >
+                              <FaArrowRight size={37} />
+                            </button>
+                          </>
+                        )}
                       </div>
-                    </div>
+                      <div className="relative w-full md:w-5/6 flex items-center justify-center">
+                        <div className="w-full">
+                          <Testimonial
+                            name={testimonialList[currentIndex].name}
+                            batch={testimonialList[currentIndex].batch}
+                            country={testimonialList[currentIndex].country}
+                            testimony={testimonialList[currentIndex].testimony}
+                            imageSrc={testimonialList[currentIndex].imageSrc}
+                          />
+                        </div>
+                      </div>
 
-                    {/* Slider dots */}
-                    <div className="flex space-x-2 mt-4">
-                      {testimonialList.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setCurrentIndex(index)}
-                          className={`w-3 h-3 rounded-full ${
-                            currentIndex === index
-                              ? "bg-indigo-500"
-                              : "bg-gray-500"
-                          }`}
-                        ></button>
-                      ))}
+                      {/* Slider dots */}
+                      <div className="flex space-x-2 mt-4">
+                        {testimonialList.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => setCurrentIndex(index)}
+                            className={`w-3 h-3 rounded-full ${
+                              currentIndex === index
+                                ? "bg-indigo-500"
+                                : "bg-gray-500"
+                            }`}
+                          ></button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
+          </section>
+        </div>
 
-      {/* Footer */}
-      <footer className="bg-gradient-to-b from-gray-200 to-silver text-white py-8">
-        <div className="flex flex-col md:flex-row w-full justify-between md:px-[10vw] mt-8 md:mt-12 mb-8 md:mb-12">
-          <div
-            className={`flex flex-col gap-4 text-gray-800 md:text-left text-center mt-10 md:mt-0`}
-          >
-            <p className="text-gray-800 font-bold">About</p>
-            <a href="/pricing">
-              <p>Pricing</p>
-            </a>
-            <a href="/testimonials">
-              <p>Success Stories</p>
-            </a>
+        {/* Footer */}
+        <footer className="bg-gradient-to-b from-gray-200 to-silver text-white py-8">
+          <div className="flex flex-col md:flex-row w-full justify-between md:px-[10vw] mt-8 md:mt-12 mb-8 md:mb-12">
+            <div
+              className={`flex flex-col gap-4 text-gray-800 md:text-left text-center mt-10 md:mt-0`}
+            >
+              <p className="text-gray-800 font-bold">About</p>
+              <a href="/pricing">
+                <p>Pricing</p>
+              </a>
+              <a href="/testimonials">
+                <p>Success Stories</p>
+              </a>
+            </div>
+            <div
+              className={`flex flex-col gap-4 text-gray-800 text-center md:text-left mt-10 md:mt-0`}
+            >
+              <p className="text-gray-800 font-bold">Legal</p>
+              <a href="/privacy">
+                <p>Privacy Policy</p>
+              </a>
+              <a href="/terms">
+                <p>Terms</p>
+              </a>
+              <a href="/coc">
+                <p>Code of Conduct</p>
+              </a>
+            </div>
+            <div
+              className={`flex flex-col gap-4 text-gray-800 text-center md:text-left mt-10 md:mt-0`}
+            >
+              <p className="text-gray-800 font-bold">Socials</p>
+              <a href="https://www.facebook.com/profile.php?id=61558405256259">
+                <p>Facebook</p>
+              </a>
+              <a href="https://www.linkedin.com/company/aceadc/">
+                <p>LinkedIn</p>
+              </a>
+              <a href="https://www.youtube.com/@Ace_ADC">
+                <p>Youtube</p>
+              </a>
+              <a href="https://medium.com/@AceADC">
+                <p>Blog</p>
+              </a>
+            </div>
+            <div
+              className={`flex flex-col gap-4 text-gray-800 text-center md:text-left mt-10 md:mt-0`}
+            >
+              <p className="text-gray-800 font-bold">Support</p>
+              <a href="mailto:support@aceadc.com">
+                <p>Send us an Email</p>
+              </a>
+              <a href="/apply">
+                <p>Contact Us</p>
+              </a>
+              <a href="/faq">
+                <p>FAQs</p>
+              </a>
+            </div>
           </div>
-          <div
-            className={`flex flex-col gap-4 text-gray-800 text-center md:text-left mt-10 md:mt-0`}
-          >
-            <p className="text-gray-800 font-bold">Legal</p>
-            <a href="/privacy">
-              <p>Privacy Policy</p>
-            </a>
-            <a href="/terms">
-              <p>Terms</p>
-            </a>
-            <a href="/coc">
-              <p>Code of Conduct</p>
-            </a>
+          <div className="text-center py-10 md:px-[10vw]">
+            <hr className="border-gray-300" />
+            {/* <p className="text-gray-800">© Ace ADC ABN A/F. All rights reserved.</p> */}
           </div>
-          <div
-            className={`flex flex-col gap-4 text-gray-800 text-center md:text-left mt-10 md:mt-0`}
-          >
-            <p className="text-gray-800 font-bold">Socials</p>
-            <a href="https://www.facebook.com/profile.php?id=61558405256259">
-              <p>Facebook</p>
-            </a>
-            <a href="https://www.linkedin.com/company/aceadc/">
-              <p>LinkedIn</p>
-            </a>
-            <a href="https://www.youtube.com/@Ace_ADC">
-              <p>Youtube</p>
-            </a>
-            <a href="https://medium.com/@AceADC">
-              <p>Blog</p>
-            </a>
-          </div>
-          <div
-            className={`flex flex-col gap-4 text-gray-800 text-center md:text-left mt-10 md:mt-0`}
-          >
-            <p className="text-gray-800 font-bold">Support</p>
-            <a href="mailto:support@aceadc.com">
-              <p>Send us an Email</p>
-            </a>
-            <a href="/apply">
-              <p>Contact Us</p>
-            </a>
-            <a href="/faq">
-              <p>FAQs</p>
-            </a>
-          </div>
-        </div>
-        <div className="text-center py-10 md:px-[10vw]">
-          <hr className="border-gray-300" />
-          {/* <p className="text-gray-800">© Ace ADC ABN A/F. All rights reserved.</p> */}
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }
