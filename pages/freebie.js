@@ -102,11 +102,11 @@ export default function HomePage() {
         <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 xl:px-0 flex justify-between items-center">
           <a className="flex items-center" href="/">
             <img
-              className="block w-50 md:w-20"
+              className="block w-20 md:w-20"
               src="logos/ace-logo-1.png"
               alt="Logo of Ace ADC"
             />
-            <h1 className="ml-2 text-6xl md:text-6xl pb-2 text-gray-800">
+            <h1 className="ml-2 text-4xl md:text-4xl pb-2 text-gray-800">
               Ace ADC
             </h1>
           </a>
@@ -127,7 +127,7 @@ export default function HomePage() {
 
         {/* Centered H1 Heading */}
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-800">
+          <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-indigo-800">
             Get Access to our Free Study Material
           </h1>
         </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
           {/* Left Side: Text Content */}
           <div className="mr-20 w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-center">
             {/* Centered Image */}
-            <div className="flex justify-center pl-1 my-3">
+            <div className="flex justify-center pl-14 pb-6">
               <img
                 src="/books/FreeBookBundle.png"
                 alt="Free Book Bundle"
@@ -145,7 +145,7 @@ export default function HomePage() {
               />
             </div>
 
-            <div className="md:14 pl-10 md:px-0">
+            <div className="pl-20 flex flex-col items-center">
               <div className="hidden md:block"></div>
               {itemList.map((timelineItem, index) => (
                 <LiItem
@@ -204,7 +204,8 @@ export default function HomePage() {
                 designed to support your success.
                 <br />
                 <br />
-                Fill the form above to get access to your free copies and start studying smarter.
+                Fill the form above to get access to your free copies and start
+                studying smarter.
               </p>
             </div>
           </div>
