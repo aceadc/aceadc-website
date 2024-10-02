@@ -7,6 +7,7 @@ export default function Pricing() {
     {
       title: "Study Material",
       price: "AU$ 749",
+      inrPrice: "approx. ₹44,500",
       anchoredPrice: "A$ 1400",
       features: [
         "30 Week Access to Study Materials via LMS",
@@ -22,6 +23,7 @@ export default function Pricing() {
     {
       title: "Full ADC Exam Prep",
       price: "AU$ 1349",
+      inrPrice: "approx. ₹79,900",
       anchoredPrice: "A$ 2400",
       label: "Early Bird Pricing",
       features: [
@@ -40,6 +42,7 @@ export default function Pricing() {
     {
       title: "Mock Test",
       price: "AU$ 49",
+      inrPrice: "approx. ₹2,900",
       anchoredPrice: "A$ 130",
       features: [
         "Complete Exam Simulation",
@@ -77,8 +80,9 @@ export default function Pricing() {
             )}
             <div className="text-4xl font-black text-[#2d4053] mb-1 rounded-lg">
               {plan.price}
-              <p className="text-center italic text-sm text-gray-300">
+              <p className="mb-3 text-center italic text-sm text-gray-400">
                 {/* + GST (10%) */}
+                {plan.inrPrice}
               </p>
             </div>
             <p className="text-center text-xl italic text-gray-600 mb-3">
