@@ -2,28 +2,24 @@ import React from "react";
 
 let timelineList = [
   {
-    date: "15 April 2024",
-    event: "Ace ADC Applications Open - September '24 Cohort",
-  },
-  {
-    date: "10 May 2024",
-    event: "Online Course Platform access is enabled",
-  },
-  {
-    date: "5 - 18 June 2024",
-    event: "Application Period for ADC Written Exam",
-  },
-  {
     date: "11-12 September 2024",
-    event: "ADC Written Exam",
+    event: "ADC Written Exam (2024)",
   },
   {
-    date: "15 Dec 2024",
-    event: "Ace ADC March 2025 Cohort Orientation",
+    date: "20 Oct 2024",
+    event: "Ace ADC LMS access is enabled",
   },
   {
-    date: "1 Feb 2024",
-    event: "Ace ADC Applications Close",
+    date: "9 Nov 2024",
+    event: "Ace ADC Cohort Orientation",
+  },
+  {
+    date: "11 Nov 2024",
+    event: "Video Lectures commence",
+  },
+  {
+    date: "March 2024",
+    event: "Tentative date for ADC Exam (2025)",
   },
 ];
 

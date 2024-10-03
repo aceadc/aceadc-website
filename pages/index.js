@@ -527,7 +527,7 @@ export default function Home(props) {
             </div>
           </div> */}
 
-        <SectionWithHeading heading="The Power of a Community">
+        <SectionWithHeading heading="Built by Dentists who cleared ADC">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             At Ace ADC, our online platform is a vibrant community where
             students worldwide connect, share experiences, and support each
@@ -763,6 +763,17 @@ export default function Home(props) {
                   Lectures is restricted to a single exam sitting, unless
                   advised otherwise. Extensions to the access is available for
                   additional cost.
+                </li>
+                <li className="mt-4">
+                  If you're reading this, we want you to know that many Winspert
+                  (Jigyasa Sharma) students, as well as those from Dr. Raza,
+                  have made the switch to Ace ADC and found greater success. Our
+                  founders are after success stories, not repeat customers. If
+                  that sounds like you, let’s talk about alternative pricing
+                  that works. Drop us an email at{" "}
+                  <b className="text-indigo-400 hover:text-indigo-500">
+                    support@aceadc.com
+                  </b>
                 </li>
               </ul>
             </div>
