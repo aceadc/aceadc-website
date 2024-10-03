@@ -8,10 +8,10 @@ export default function Document() {
         <script async src="/posthog.js"></script>
 
         {/* Tidio Chatbot */}
-        <script
+        {/* <script
           src="//code.tidio.co/j9cbswajqzsl5bjumoytsqhp6cwjew9s.js"
           async
-        ></script>
+        ></script> */}
 
         {/* Google Analytics */}
         <script
