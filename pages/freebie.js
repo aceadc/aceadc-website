@@ -11,7 +11,7 @@ let testimonialList = [
     batch: "'24 Cohort",
     country: "🇮🇳 India",
     testimony:
-      "As someone with a busy schedule, I needed a flexible and accessible learning platform to prepare for the ADC exam. Ace ADC exceeded my expectations with its user-friendly interface and comprehensive study materials. Thanks to Ace ADC, I'm now well on my way to pursuing my dental career in Australia!",
+      "As someone with a full time job, I needed a flexible and accessible learning platform to prepare for the ADC exam. Ace ADC exceeded my expectations with its user-friendly interface and comprehensive study materials. Thanks to Ace ADC, I'm now well on my way to pursuing my dental career in Australia!",
     imageSrc: "/avatars/sai-headshot.png",
   },
   {

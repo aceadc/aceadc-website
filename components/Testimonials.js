@@ -5,12 +5,12 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 let testimonialList = [
   {
-    name: "Aryan Kapoor",
+    name: "Sreelakshmi",
     batch: "'24 Cohort",
     country: "🇮🇳 India",
     testimony:
-      "As someone with a busy schedule, I needed a flexible and accessible learning platform to prepare for the ADC exam. Ace ADC exceeded my expectations with its user-friendly interface and comprehensive study materials. Thanks to Ace ADC, I'm now well on my way to pursuing my dental career in Australia!",
-    imageSrc: "/avatars/sai-headshot.png",
+      "I’m from a small town and couldn’t afford proper exam prep. Ace ADC gave me a concession, and with their amazing lectures, I cleared the ADC exam on my first try! The support and study materials were exactly what I needed. Now, I'm waiting for my Part 2 results, feeling confident and grateful to Ace ADC for making my dreams possible.",
+    imageSrc: "/avatars/sree-headshot.png",
   },
   {
     name: "Aiman Ali",
@@ -43,6 +43,14 @@ let testimonialList = [
     testimony:
       "Ace ADC's commitment to affordability and accessibility is truly commendable. I never thought I could afford such high-quality exam preparation resources, but Ace ADC made it possible. Thanks to their dedication to democratizing education, I'm now one step closer to fulfilling my dream of practicing dentistry in Australia",
     imageSrc: "/avatars//meville-headshot.png",
+  },
+  {
+    name: "Aryan Kapoor",
+    batch: "'24 Cohort",
+    country: "🇮🇳 India",
+    testimony:
+      "As someone with a full time job, I needed a flexible and accessible learning platform to prepare for the ADC exam. Ace ADC exceeded my expectations with its user-friendly interface and comprehensive study materials. Thanks to Ace ADC, I'm now well on my way to pursuing my dental career in Australia!",
+    imageSrc: "/avatars/sai-headshot.png",
   },
 ];
 
