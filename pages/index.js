@@ -68,7 +68,7 @@ export default function Home(props) {
         />
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto overflow-x-hidden">
-        <section className="mx-auto relative">
+        {/* <section className="mx-auto relative">
           <div className="bg-gray-800 p-2 border-t border-gray-900 rounded-md">
             <a href="#pricing">
               <div className="w-max mx-auto bg-gradient-to-br from-gray-700 to-gray-900 border border-red-400 rounded-lg shadow-md p-3 md:p-4 text-center">
@@ -78,7 +78,7 @@ export default function Home(props) {
               </div>
             </a>
           </div>
-        </section>
+        </section> */}
 
         <section className="hero__bg-pattern bg-gray-900 relative">
           <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 z-0">
@@ -766,7 +766,7 @@ export default function Home(props) {
                 </li>
                 <li className="mt-4">
                   If you're reading this, we want you to know that many Winspert
-                  (Jigyasa Sharma) students, as well as those from Dr. Raza,
+                  (Dr. Jigyasa) students, as well as those from Dr. Bedo,
                   have made the switch to Ace ADC and found greater success. Our
                   founders are after success stories, not repeat customers. If
                   that sounds like you, let’s talk about alternative pricing

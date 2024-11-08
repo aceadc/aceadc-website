@@ -16,9 +16,9 @@ export default function Footer() {
               <a href="/testimonials">
                 <p>Success Stories</p>
               </a>
-              <a href="https://lms.aceadc.com">
+              {/* <a href="https://lms.aceadc.com">
                 <p>LMS</p>
-              </a>
+              </a> */}
             </div>
             <div
               className={`flex flex-col gap-4 text-white text-center md:text-left mt-10 md:mt-0`}
@@ -41,9 +41,9 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61558405256259">
                 <p>Facebook</p>
               </a>
-              <a href="https://www.linkedin.com/company/aceadc/">
+              {/* <a href="https://www.linkedin.com/company/aceadc/">
                 <p>LinkedIn</p>
-              </a>
+              </a> */}
               <a href="https://www.youtube.com/@Ace_ADC">
                 <p>Youtube</p>
               </a>
