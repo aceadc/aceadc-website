@@ -142,10 +142,12 @@ const P = [
         <div className="text-center mt-4">
           <a
             id="apply-button-footer-cta"
-            href="https://buy.stripe.com/fZe7wa5cq3Qtg3m005"
-            className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+            // href="https://buy.stripe.com/fZe7wa5cq3Qtg3m005"
+            // className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+            className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-gray-300 text-gray-500 cursor-not-allowed rounded-md text-base lg:text-lg text-center font-semibold shadow-lg"
           >
-            Register Now
+            {/* Register Now */}
+            Applications Closed
           </a>
         </div>
       </div>

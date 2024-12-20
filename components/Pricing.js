@@ -36,9 +36,9 @@ export default function Pricing() {
         "Updated Topic-specific Material from Recent Exam",
         "Access to Ace ADC Peer & Mentor Community",
       ],
-      buttonLink: "https://buy.stripe.com/fZe7wa5cq3Qtg3m005",
-      buttonText: "Apply Now",
-      buttonEnabled: true,
+      // buttonLink: "https://buy.stripe.com/fZe7wa5cq3Qtg3m005",
+      buttonText: "Applications Closed",
+      buttonEnabled: false,
     },
     {
       title: "Mock Test",
