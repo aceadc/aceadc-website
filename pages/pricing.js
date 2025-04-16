@@ -203,7 +203,7 @@ const P = [
             // className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-indigo-500 text-white rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
             className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-gray-300 text-gray-500 cursor-not-allowed rounded-md text-base lg:text-lg text-center font-semibold shadow-lg"
           >
-            Available in 2025
+            Available on Request
           </a>
         </div>
       </div>

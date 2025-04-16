@@ -53,7 +53,7 @@ export default function Pricing() {
         "Instructor Remarks & Assessment",
       ],
       // buttonLink: "",
-      buttonText: "Available in 2025",
+      buttonText: "Available on Request",
       buttonEnabled: false,
     },
   ];
