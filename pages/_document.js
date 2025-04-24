@@ -93,6 +93,13 @@ export default function Document() {
             `,
           }}
         />
+
+        {/* AHREFS */}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="vMJvi/DoUwn/ouiBy5f1ew"
+          async
+        ></script>
       </Head>
       <body>
         <Main />
