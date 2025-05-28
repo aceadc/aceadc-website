@@ -94,6 +94,8 @@ export default function Document() {
           }}
         />
 
+        <meta name="ahrefs-site-verification" content="71c32ea16b6e3c15cb739ce0a9bc4af0eadf34a9d56d0930070068670a4cf702">
+
         {/* AHREFS */}
         <script
           src="https://analytics.ahrefs.com/analytics.js"
