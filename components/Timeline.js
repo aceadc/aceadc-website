@@ -2,24 +2,24 @@ import React from "react";
 
 let timelineList = [
   {
-    date: "11-12 September 2024",
-    event: "ADC Written Exam (2024)",
+    date: "11-12 September 2026",
+    event: "ADC Written Exam (2026)",
   },
   {
-    date: "20 Oct 2024",
+    date: "20 Oct 2026",
     event: "Ace ADC LMS access is enabled",
   },
   {
-    date: "9 Nov 2024",
+    date: "9 Nov 2026",
     event: "Ace ADC Cohort Orientation",
   },
   {
-    date: "11 Nov 2024",
+    date: "11 Nov 2026",
     event: "Video Lectures commence",
   },
   {
-    date: "March 2024",
-    event: "Tentative date for ADC Exam (2025)",
+    date: "March 2027",
+    event: "Tentative date for ADC Exam (2027)",
   },
 ];
 
