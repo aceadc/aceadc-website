@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import "../styles/tailwind.css";
+import { StatsigProviderWrapper } from '../components/statsig-provider';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,7 +15,9 @@ function MyApp({ Component, pageProps }) {
 
         {/* Additional head content can go here */}
       </Head>
-      <Component {...pageProps} />
+      <StatsigProviderWrapper>
+        <Component {...pageProps} />
+      </StatsigProviderWrapper>
     </>
   );
 }
